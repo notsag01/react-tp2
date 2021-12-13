@@ -19,7 +19,7 @@ Y NO SE PORQUE */
 export const NavLat=()=>{
     return(
         <div className="Nav-lat">
-
+                
         </div>
     )
 }
