@@ -1,0 +1,3 @@
+const estilos={        
+    color:"red"            
+}

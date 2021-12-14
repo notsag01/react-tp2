@@ -1,19 +1,14 @@
 import './App.css';
-import {Titulo} from "./componentes/titulo"; 
-import {Navbar} from "./componentes/navbar"
-import {NavLat} from "../src/componentes/nav-lat"
+import Header from "./componentes/header/index"
+import Nav  from "./componentes/navegador/index"
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <Titulo />
-          <Navbar />
-      </header>
-      <main className="Main">
-          <NavLat/>
-      </main>
-    </div>
+    <div>
+        <Header titulo="MI PAGINA"/>
+        <Nav/>
+    </div>  
   );
 }
 

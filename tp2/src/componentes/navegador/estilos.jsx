@@ -1,0 +1,4 @@
+
+const estilos={
+    display:"inline"
+}
