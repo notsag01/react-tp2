@@ -1,3 +1,3 @@
 const estilos={        
-    color:"red"            
+    color:"red"           
 }
