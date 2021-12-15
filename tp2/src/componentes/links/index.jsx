@@ -21,22 +21,18 @@ const Links= () =>{
             setCategorias(respuesta)
         },[]);
         console.log(categorias);
-        return(
-            <>
-                {categorias.map((categorias)=>{
-                    return(
-                        <a href="{categorias.ruta}" key="{catergorias.id}"> <li> {categorias.nombre} </li> </a>
-                    )
-                })}
-            </>
-        )
+        
 
         
 
     })
-    return (
+    return(
         <>
-           
+            {categorias.map((categorias)=>{
+                return(
+                    <a href="{categorias.ruta}" key="{catergorias.id}"> <li> {categorias.nombre} </li> </a>
+                )
+            })}
         </>
     )
 }
