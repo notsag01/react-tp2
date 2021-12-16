@@ -1,13 +1,13 @@
 import './App.css';
 import Header from "./componentes/header/index"
-import Links from "./componentes/links/index"
+import Navegador from "./componentes/navs/index"
 
 
 function App() {
   return (
     <div>
         <Header titulo="MI PAGINA"/>
-        <Links/>
+        <Navegador/>
     </div>  
   );
 }

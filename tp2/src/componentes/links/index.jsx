@@ -1,12 +1,11 @@
 import React, {useEffect, useState} from 'react';
+import {styles} from "./estilos";
 
 
 const Categorias=[
     {id:1, nombre:"Oro", ruta:"/"},
     {id:2, nombre:"Plata", ruta:"/"},
-    {id:3, nombre:"Acero", ruta:"/"},
-    
-
+    {id:3, nombre:"Acero", ruta:"/"},    
 ];
 
 
@@ -20,17 +19,14 @@ const Links= () =>{
         promesaCat.then((respuesta)=>{
             setCategorias(respuesta)
         },[]);
-        console.log(categorias);
-        
-
-        
+        //console.log(categorias);
 
     })
     return(
         <>
             {categorias.map((categorias)=>{
                 return(
-                    <a href="{categorias.ruta}" key="{catergorias.id}"> <li> {categorias.nombre} </li> </a>
+                    <a href="{categorias.ruta}" key="{catergorias.id}"> <li style={styles.li}> {categorias.nombre} </li> </a>
                 )
             })}
         </>
