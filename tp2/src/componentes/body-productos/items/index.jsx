@@ -8,8 +8,8 @@ const Item=({item})=>{
             <div className="container" >
                 <div className="row">
                     <h3> {item.nombre} </h3>
-                    <p> {item.precio} </p>
-
+                    <h4> ${item.precio} </h4>
+                    
                 </div>
             </div>
         </>

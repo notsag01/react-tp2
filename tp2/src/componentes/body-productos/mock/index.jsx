@@ -1,5 +1,5 @@
 
-const MokedItems=
+const MokedProductos=
 
 [
     {
@@ -724,4 +724,4 @@ const MokedItems=
     }
   ]
 
-  export default MokedItems;
+  export default MokedProductos;
