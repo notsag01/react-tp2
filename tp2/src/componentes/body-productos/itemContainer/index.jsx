@@ -1,6 +1,7 @@
 import MokedProductos from "../mock/index";
 import {useState, useEffect} from "react"
 import ItemsLista from "../itemLista/index";
+import styles from "./styles"
 
 const ItemContainer=()=>{
     const [items, setitem] = useState([])
@@ -16,7 +17,7 @@ const ItemContainer=()=>{
         })
     }, [items])
 
-    return <ItemsLista items={items}/>
+    return <ItemsLista items={items} styles={styles}/>
 }
 
 export default ItemContainer;
