@@ -1,19 +1,17 @@
-import './App.css';
-import {Titulo} from "./componentes/titulo"; 
-import {Navbar} from "./componentes/navbar"
-import {NavLat} from "../src/componentes/nav-lat"
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <Titulo />
-          <Navbar />
-      </header>
-      <main className="Main">
-          <NavLat/>
-      </main>
-    </div>
+    <Router>
+      
+    </Router>
   );
 }
 
