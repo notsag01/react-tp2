@@ -1,17 +1,23 @@
 import React from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import Navbar from "./componentes/Navbar";
 
 
 function App() {
   return (
-    <Router>
-      
-    </Router>
+    <BrowserRouter>
+      <Navbar/>
+      <Switch>
+        <Route exact path="/">
+          <ItemListContainer/>
+        </Route>  
+      </Switch>
+    </BrowserRouter>
   );
 }
 
