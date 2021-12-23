@@ -12,7 +12,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-caracol.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-caracol.jpg"
     },
     {
       "id": 2,
@@ -24,7 +24,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-argentina.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-argentina.jpg"
     },
     {
       "id": 3,
@@ -36,7 +36,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-con-piedra.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-con-piedra.jpg"
     },
     {
       "id": 4,
@@ -48,7 +48,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-con-rulo.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-con-rulo.jpg"
     },
     {
       "id": 5,
@@ -60,7 +60,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-infinita-con-piedras.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-infinita-con-piedras.jpg"
     },
     {
       "id": 6,
@@ -72,7 +72,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-piedra-rosa.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-piedra-rosa.jpg"
     },
     {
       "id": 7,
@@ -84,7 +84,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-rockero.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-rockero.jpg"
     },
     {
       "id": 8,
@@ -96,7 +96,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/plata/anillo-plata-sello-hombre"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-sello-hombre"
     },
     {
       "id": 9,
@@ -108,7 +108,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-con-brillantes.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-con-brillantes.jpg"
     },
     {
       "id": 10,
@@ -120,7 +120,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-corazon.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
     },
     {
       "id": 11,
@@ -144,7 +144,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/anillo/acero/anillo-acero-buho.jpg"
+      "imagen": "/assets/img/pulseras/anillo/acero/anillo-acero-buho.jpg"
     },
     {
       "id": 13,
@@ -156,7 +156,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-corazones-colores.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-corazones-colores.jpg"
     },
     {
       "id": 14,
@@ -168,7 +168,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-doble-v.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-doble-v.jpg"
     },
     {
       "id": 15,
@@ -180,7 +180,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-famila.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-famila.jpg"
     },
     {
       "id": 16,
@@ -192,7 +192,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-sello.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-sello.jpg"
     },
     {
       "id": 17,
@@ -204,7 +204,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/acero/anillo-acero-triple-v.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-triple-v.jpg"
     },
     {
       "id": 18,
@@ -216,7 +216,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/oro/anillo-oro-18-kilates.jpg"
+      "imagen": "/assets/img/anillo/oro/anillo-oro-18-kilates.jpg"
     },
     {
       "id": 19,
@@ -228,7 +228,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/oro/anillo-oro-amarillo-calado.jpg"
+      "imagen": "/assets/img/anillo/oro/anillo-oro-amarillo-calado.jpg"
     },
     {
       "id": 20,
@@ -240,7 +240,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/oro/anillo-oro-corazon.jpg"
+      "imagen": "/assets/img/anillo/oro/anillo-oro-corazon.jpg"
     },
     {
       "id": 21,
@@ -252,7 +252,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/oro/anillo-oro-medio-sin-fin.jpg"
+      "imagen": "/assets/img/anillo/oro/anillo-oro-medio-sin-fin.jpg"
     },
     {
       "id": 22,
@@ -264,7 +264,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/anillo/oro/anillo-oro-v-cristal.jpg"
+      "imagen": "/assets/img/anillo/oro/anillo-oro-v-cristal.jpg"
     },
     {
       "id": 23,
@@ -276,7 +276,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-manzanitas.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-manzanitas.jpg"
     },
     {
       "id": 24,
@@ -288,7 +288,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-arbol.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-arbol.jpg"
     },
     {
       "id": 25,
@@ -300,7 +300,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-corazon.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-corazon.jpg"
     },
     {
       "id": 26,
@@ -312,7 +312,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-corona.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-corona.jpg"
     },
     {
       "id": 27,
@@ -324,7 +324,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-mano.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-mano.jpg"
     },
     {
       "id": 28,
@@ -336,7 +336,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-mariposa.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-mariposa.jpg"
     },
     {
       "id": 29,
@@ -348,7 +348,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-planeta.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-planeta.jpg"
     },
     {
       "id": 30,
@@ -360,7 +360,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/acero/dije-acero-trebol.jpg"
+      "imagen": "/assets/img/dijes/acero/dije-acero-trebol.jpg"
     },
     {
       "id": 31,
@@ -372,7 +372,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-atrapa-sueño.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-atrapa-sueño.jpg"
     },
     {
       "id": 32,
@@ -384,7 +384,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-boca.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-boca.jpg"
     },
     {
       "id": 33,
@@ -396,7 +396,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-corazon.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-corazon.jpg"
     },
     {
       "id": 34,
@@ -408,7 +408,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-delfin.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-delfin.jpg"
     },
     {
       "id": 35,
@@ -420,7 +420,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-dinero.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-dinero.jpg"
     },
     {
       "id": 36,
@@ -432,7 +432,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-esculapio.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-esculapio.jpg"
     },
     {
       "id": 37,
@@ -444,7 +444,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
     },
     {
       "id": 38,
@@ -456,7 +456,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
     },
     {
       "id": 39,
@@ -468,7 +468,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/oro/dije-oro-mariposa.jpg"
+      "imagen": "/assets/img/dijes/oro/dije-oro-mariposa.jpg"
     },
     {
       "id": 40,
@@ -480,7 +480,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-ala.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-ala.jpg"
     },
     {
       "id": 41,
@@ -492,7 +492,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-arbol.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-arbol.jpg"
     },
     {
       "id": 42,
@@ -504,7 +504,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-buho.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-buho.jpg"
     },
     {
       "id": 43,
@@ -516,7 +516,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-corazon.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-corazon.jpg"
     },
     {
       "id": 44,
@@ -528,7 +528,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-cruz.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-cruz.jpg"
     },
     {
       "id": 45,
@@ -540,7 +540,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-infinito.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-infinito.jpg"
     },
     {
       "id": 46,
@@ -552,7 +552,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/dijes/plata/dije-plata-margarita.jpg"
+      "imagen": "/assets/img/dijes/plata/dije-plata-margarita.jpg"
     },
     {
       "id": 47,
@@ -576,7 +576,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/acero/pulsera-acero-con-dijes.jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-con-dijes.jpg"
     },
     {
       "id": 49,
@@ -588,7 +588,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/acero/pulsera-acero-con-flor.jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-con-flor.jpg"
     },
     {
       "id": 50,
@@ -600,7 +600,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/acero/pulsera-acero-identificacion.jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-identificacion.jpg"
     },
     {
       "id": 51,
@@ -612,7 +612,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/acero/pulsera-acero-infinito.jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-infinito.jpg"
     },
     {
       "id": 52,
@@ -624,7 +624,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/acero/pulsera-acero-esclava .jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-esclava .jpg"
     },
     {
       "id": 53,
@@ -636,7 +636,7 @@ const MokedProductos=
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/oro-pulsera-oro-identificacion.jpg"
+      "imagen": "/assets/img/pulseras/oro-pulsera-oro-identificacion.jpg"
     },
     {
       "id": 54,
@@ -648,7 +648,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-clapton.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-clapton.jpg"
     },
     {
       "id": 55,
@@ -660,7 +660,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-cierre-marinero.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-cierre-marinero.jpg"
     },
     {
       "id": 56,
@@ -672,7 +672,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-fijago-3x1.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-fijago-3x1.jpg"
     },
     {
       "id": 57,
@@ -684,7 +684,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-grume.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-grume.jpg"
     },
     {
       "id": 58,
@@ -696,7 +696,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-malla.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-malla.jpg"
     },
     {
       "id": 59,
@@ -708,7 +708,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-soga.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-soga.jpg"
     },
     {
       "id": 60,
@@ -720,7 +720,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "./assets/img/pulseras/plata/pulsera-plata-veneciana.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-veneciana.jpg"
     }
   ]
 
