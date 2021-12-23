@@ -1,15 +1,16 @@
 import React, {useEffect, useState} from 'react';
 import {styles} from "./estilos";
+import { Link } from "react-router-dom";
 
 
 const Categorias=[
-    {id:1, nombre:"Oro", ruta:"/"},
-    {id:2, nombre:"Plata", ruta:"/"},
-    {id:3, nombre:"Acero", ruta:"/"},    
+    {id:1, nombre:"ORO", ruta:"/categoria/ORO"},
+    {id:2, nombre:"PLATA", ruta:"/categoria/PLATA"},
+    {id:3, nombre:"ACERO", ruta:"/categoria/ACERO"},    
 ];
 
 
-const Links= () =>{
+const Navegador= () =>{
     const [categorias, setCategorias]=useState([]);
     useEffect(()=>{
         const promesaCat = new Promise((respuesta, rechazo)=>{
@@ -26,7 +27,7 @@ const Links= () =>{
         <>
             {categorias.map((categorias)=>{
                 return(
-                    <a href="{categorias.ruta}" key="{catergorias.id}"> <li style={styles.li}> {categorias.nombre} </li> </a>
+                    <Link to={categorias.ruta} key="{catergorias.id}"> <li style={styles.li}> {categorias.nombre} </li> </Link>
                 )
             })}
         </>
@@ -34,7 +35,7 @@ const Links= () =>{
 }
 
 
-export default Links
+export default Navegador
 
 
 
