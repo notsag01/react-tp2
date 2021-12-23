@@ -10,7 +10,7 @@ const ItemContainer=()=>{
             
             setTimeout(() => {
                 res(MokedProductos)                
-            },3000);
+            },1000);
         })
         itemPromesa.then((res)=>{
             setitem(res)
