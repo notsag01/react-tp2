@@ -7,9 +7,9 @@ const Navegador = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col"></div>
-                <div className="col"> <Links/> </div>
-                <div className="col"></div>
+                <div className="col-md-2"></div>
+                <div className="col-md-8"> <Links/> </div>
+                <div className="col-md-2"></div>
             </div>
             
         </div>
