@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 
 
 const Categorias=[
+    {id:0, nombre:"HOME", ruta:"/"},
     {id:1, nombre:"ORO", ruta:"/categoria/ORO"},
     {id:2, nombre:"PLATA", ruta:"/categoria/PLATA"},
     {id:3, nombre:"ACERO", ruta:"/categoria/ACERO"},    
