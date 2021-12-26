@@ -4,7 +4,7 @@ import Navegador from "./componentes/navs/index"
 import ItemContainer from "./componentes/body-productos/itemContainer/index"
 import ItemDetailContainer from './componentes/body-productos/detail/containerDetail';
 import {BrowserRouter,Switch, Route} from "react-router-dom"
-import {Params} from "react-router-dom"
+
 
 
 function App() {

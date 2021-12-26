@@ -8,7 +8,7 @@ const ItemContainer=()=>{
     const [items, setitem] = useState([])
     //console.log(useParams())
     const {catId}=useParams();
-    console.log(catId)
+    //  console.log(catId)
 
     useEffect(() => {
         const itemPromesa=new Promise((res, rej)=>{
@@ -22,7 +22,7 @@ const ItemContainer=()=>{
         itemPromesa.then((res)=>{
             setitem(res)
         })
-    }, [items])
+    }, [catId])
 
     return <ItemsLista items={items} styles={styles}/>
 }

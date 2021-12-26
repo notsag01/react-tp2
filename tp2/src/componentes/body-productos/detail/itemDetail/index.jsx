@@ -1,19 +1,14 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
-function ItemDetail({
-    id, nombre, precio
-}) {
+export const ItemDetail =({producto}) =>{
     return (
-        <Link to={`/producto/${id}`}>
-            <div>
-                <span> {nombre} </span>
-                <span> {precio} </span>
-            </div>
-
-            
-        </Link>
+        <div key={producto.id}>
+            <Link to={`/producto/${producto.id}`}>
+                <span> {producto.nombre} </span>
+                <span> {producto.precio} </span>
+            </Link>
+        </div>
     );
 }
 
-export default ItemDetail;

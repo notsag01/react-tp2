@@ -1,13 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
 import MokedProductos from '../../mock';
-import itemDetail from "../itemDetail/index"
+import {ItemDetail} from "../itemDetail/index"
 
 
 function ItemDetailContainer() {
-    const [productos, setProductos]=useState({});
+    const [producto, setProductos]=useState({});
 
-    const prodId=useParams()
+    const {prodId} =useParams();
+    console.log(prodId)
 
     useEffect(()=>{
         const getProductos= new Promise((res)=>{
@@ -21,13 +22,10 @@ function ItemDetailContainer() {
                 setProductos(res)
             })
         })
-    },[productos])
+    },[prodId]);
+    
 
-    return (
-        <div>
-            <itemDetail productos={productos}/>
-        </div>
-    );
+    return  <ItemDetail producto={producto}/>
 }
 
 export default ItemDetailContainer;
