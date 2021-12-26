@@ -1,5 +1,4 @@
 const styles={    
-    border:"1px solid black",
     border: "5px solid darkblue",
     height: "300px",
     width: "200px",

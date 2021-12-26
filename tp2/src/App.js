@@ -16,11 +16,11 @@ function App() {
           <Route exact path="/">
             <ItemContainer/>
           </Route>
-          <Route exact path="/categoria/:catId">
-            <ItemContainer/>
-          </Route>
-          <Route exact path="/producto/:prodId">
+          <Route path="/producto/:prodId">
             <ItemDetailContainer/>
+          </Route>
+          <Route  path="/categoria/:catId">
+            <ItemContainer/>
           </Route>
         </Switch>  
     </BrowserRouter>  

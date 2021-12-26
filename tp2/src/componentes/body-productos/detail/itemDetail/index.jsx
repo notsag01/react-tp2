@@ -1,13 +1,13 @@
 import React from 'react';
-import {Link} from 'react-router-dom';
+import {NavLink} from 'react-router-dom';
 
-export const ItemDetail =({producto}) =>{
+export const ItemDetail =({...producto}) =>{
     return (
-        <div key={producto.id}>
-            <Link to={`/producto/${producto.id}`}>
+        <div className='container'>
+            <NavLink to={`/producto/${producto.id}`}>
                 <span> {producto.nombre} </span>
                 <span> {producto.precio} </span>
-            </Link>
+            </NavLink>
         </div>
     );
 }

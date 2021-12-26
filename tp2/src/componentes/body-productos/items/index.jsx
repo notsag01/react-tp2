@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 const Item=({item})=>{
     return(
         <>
-            <Link to={`/categoria/cat${item.id}`}>
+            <Link to={`/categoria/${item.id}`}>
                 <div className="contendor" style={styles} >
                     <div>
                         <div style={{textAlign:"center"}}>

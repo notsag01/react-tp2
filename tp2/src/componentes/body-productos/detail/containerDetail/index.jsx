@@ -17,15 +17,16 @@ function ItemDetailContainer() {
 
                 res(dato)
             },1000)
-            
-            getProductos.then((res)=>{
-                setProductos(res)
-            })
         })
+            
+        getProductos.then((res)=>{
+            setProductos(res)
+        })
+        
     },[prodId]);
     
 
-    return  <ItemDetail producto={producto}/>
+    return  <ItemDetail {...producto}/>
 }
 
 export default ItemDetailContainer;
