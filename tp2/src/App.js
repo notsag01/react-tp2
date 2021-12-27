@@ -15,12 +15,13 @@ function App() {
     <BrowserRouter>
       <Navegador titulo="MI PAGINA"/>
       <Switch>
-        <Route>
+        <Route exact path="/">
+          <ItemContainer/>
+        </Route>
+        <Route path="/categoria/:catId">
           <ItemContainer/>
         </Route>
       </Switch>
-
-
     </BrowserRouter>
   )
   

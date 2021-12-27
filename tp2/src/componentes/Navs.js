@@ -16,7 +16,7 @@ function Navs() {
             {categorias.map((cat)=>{
                 return(
                     <div className="col navsDeCategorias" key={cat.id}>
-                        <NavLink className="nombreCategorias" to={cat.ruta}>
+                        <NavLink to={cat.ruta} className="nombreCategorias" >
                             {cat.nombre}
                         </NavLink>
                     </div>
