@@ -1,7 +1,5 @@
 
-const MokedProductos=
-
-[
+export const data=[
     {
       "id": 1,
       "nombre": "ANILLO CARACOL",
@@ -36,7 +34,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/plata/anillo-plata-con-piedra.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-con-piedras.jpg"
     },
     {
       "id": 4,
@@ -60,7 +58,7 @@ const MokedProductos=
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/plata/anillo-plata-infinita-con-piedras.jpg"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-infinito-con-piedras.jpg"
     },
     {
       "id": 6,
@@ -132,7 +130,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": null
+      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
     },
     {
       "id": 12,
@@ -564,7 +562,7 @@ const MokedProductos=
       "cat2": "ACERO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": null
+      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
     },
     {
       "id": 48,
@@ -723,5 +721,3 @@ const MokedProductos=
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-veneciana.jpg"
     }
   ]
-
-  export default MokedProductos;
