@@ -17,7 +17,7 @@ function ItemContainer() {
         const getProductos= new Promise((res)=>{
             setTimeout(()=>{
                 const dato= catId ?
-                 data.filter((producto) => producto.cat2 === "PLATA")                 
+                 data.filter((producto) => producto.cat2 === catId)                 
                 :data; 
                 res(dato)
                 //console.log(data)
