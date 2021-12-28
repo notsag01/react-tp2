@@ -51,6 +51,7 @@ padding: 1rem;
   width: 400px;
   height: 400px;
   object-fit: cover;
+  padding: 1rem;
 }
 .detail h1{
   text-align: center;
