@@ -7,6 +7,7 @@ import {
 } from "react-router-dom";
 import Navegador from "./componentes/Navegador"
 import ItemContainer from "./componentes/ItemContainer"
+import ItemDetailContainer from "./componentes/DetailContainer"
 
 
 
@@ -15,8 +16,11 @@ function App() {
     <BrowserRouter>
       <Navegador titulo="MI PAGINA"/>
       <Switch>
-        <Route exact path="/categoria/:catId">
+        <Route path="/categoria/:catId">
           <ItemContainer/>
+        </Route>
+        <Route path="/producto/:itemId">
+          <ItemDetailContainer/>
         </Route>
         <Route exact path="/">
           <ItemContainer/>
