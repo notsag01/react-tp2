@@ -94,7 +94,7 @@ const data=[
       "cat2": "PLATA",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/plata/anillo-plata-sello-hombre"
+      "imagen": "/assets/img/anillo/plata/anillo-plata-sello-hombre.jpg"
     },
     {
       "id": 9,
@@ -106,7 +106,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/acero/anillo-acero-con-brillantes.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-con-brillantes.png"
     },
     {
       "id": 10,
@@ -118,7 +118,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpeg"
     },
     {
       "id": 11,
@@ -130,7 +130,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-agua-marina-hombre.jpg"
     },
     {
       "id": 12,
@@ -166,7 +166,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/acero/anillo-acero-doble-v.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-doble-v-.jpg"
     },
     {
       "id": 15,
@@ -178,7 +178,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/acero/anillo-acero-famila.jpg"
+      "imagen": "/assets/img/anillo/acero/anillo-acero-familia.jpg"
     },
     {
       "id": 16,
@@ -214,7 +214,7 @@ const data=[
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "/assets/img/anillo/oro/anillo-oro-18-kilates.jpg"
+      "imagen": "/assets/img/anillo/oro/alianzas-oro-18-kilates.jpg"      
     },
     {
       "id": 19,
@@ -622,7 +622,7 @@ const data=[
       "cat2": "ACERO",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/pulseras/acero/pulsera-acero-esclava .jpg"
+      "imagen": "/assets/img/pulseras/acero/pulsera-acero-esclava.jpg"
     },
     {
       "id": 53,
@@ -634,7 +634,7 @@ const data=[
       "cat2": "ORO",
       "paginaPrincipal": "true",
       "oferta": "false",
-      "imagen": "/assets/img/pulseras/oro-pulsera-oro-identificacion.jpg"
+      "imagen": "/assets/img/pulseras/oro/pulsera-oro-identificacion.jpg"
     },
     {
       "id": 54,
@@ -670,7 +670,7 @@ const data=[
       "cat2": "PLATA",
       "paginaPrincipal": "false",
       "oferta": "false",
-      "imagen": "/assets/img/pulseras/plata/pulsera-plata-fijago-3x1.jpg"
+      "imagen": "/assets/img/pulseras/plata/pulsera-plata-figaro-3x1.jpg"
     },
     {
       "id": 57,
