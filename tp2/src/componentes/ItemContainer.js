@@ -1,25 +1,29 @@
 import React, {useState, useEffect} from 'react';
 import ItemLista from "./ItemLista"
-import {data} from "../mock/Mock"
+import data from "../mock/Mock"
 import {useParams} from "react-router-dom"
+
+//console.log(data)
 
 function ItemContainer() {
     const [productos, setProductos]= useState({})
     const [loading, setLoading]= useState(true)
 
     const {catId}=useParams();
+    //console.log(catId)
 
     useEffect(()=>{
         setLoading(true);
-        const getProducto= new Promise((res)=>{
+        const getProductos= new Promise((res)=>{
             setTimeout(()=>{
                 const dato= catId ?
-                 data.filter((item)=>item.cat2===catId)
-                :data 
+                 data.filter((producto) => producto.cat2 === "PLATA")                 
+                :data; 
                 res(dato)
+                //console.log(data)
             },1000)
         })
-        getProducto.then((res)=>{
+        getProductos.then((res)=>{
             setProductos(res);
         })
         .finally(()=>setLoading(false))
@@ -30,8 +34,7 @@ function ItemContainer() {
         <div>
             <ItemLista productos={productos}/>
         </div>
-    );
-    
+    );    
 }
 
 export default ItemContainer;

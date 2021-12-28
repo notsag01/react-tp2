@@ -6,9 +6,9 @@ import { NavLink } from 'react-router-dom';
 function Navs() {
     const categorias=[
         {id:1, nombre:"HOME", ruta: "/"},
-        {id:2, nombre:"ACERO", ruta: "/categoria/acero"},
-        {id:3, nombre:"PLATA", ruta: "/categoria/plata"},
-        {id:4, nombre:"ORO", ruta: "/categoria/oro"},
+        {id:2, nombre:"ACERO", ruta: "/categoria/ACERO"},
+        {id:3, nombre:"PLATA", ruta: "/categoria/PLATA"},
+        {id:4, nombre:"ORO", ruta: "/categoria/ORO"},
     ]
     
     return (

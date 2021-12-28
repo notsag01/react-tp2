@@ -1,5 +1,5 @@
 
-export const data=[
+const data=[
     {
       "id": 1,
       "nombre": "ANILLO CARACOL",
@@ -721,3 +721,5 @@ export const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-veneciana.jpg"
     }
   ]
+
+  export default data;
