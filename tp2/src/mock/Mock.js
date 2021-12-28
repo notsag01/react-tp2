@@ -1,7 +1,7 @@
 
 const data=[
     {
-      "id": 1,
+      "id": "1",
       "nombre": "ANILLO CARACOL",
       "costo": 1000,
       "precio": 1500,
@@ -13,7 +13,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-caracol.jpg"
     },
     {
-      "id": 2,
+      "id": "2",
       "nombre": "ANILLO ARGENTINA",
       "costo": 1100,
       "precio": 1650,
@@ -25,7 +25,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-argentina.jpg"
     },
     {
-      "id": 3,
+      "id": "3",
       "nombre": "ANILLO CON PIEDRAS",
       "costo": 1200,
       "precio": 1800,
@@ -37,7 +37,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-con-piedras.jpg"
     },
     {
-      "id": 4,
+      "id": "4",
       "nombre": "ANILLO CON RULO",
       "costo": 1000,
       "precio": 1500,
@@ -49,7 +49,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-con-rulo.jpg"
     },
     {
-      "id": 5,
+      "id": "5",
       "nombre": "ANILLO INFINITO",
       "costo": 1100,
       "precio": 1650,
@@ -61,7 +61,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-infinito-con-piedras.jpg"
     },
     {
-      "id": 6,
+      "id": "6",
       "nombre": "ANILLO PIEDRA ROSA",
       "costo": 1200,
       "precio": 1800,
@@ -73,7 +73,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-piedra-rosa.jpg"
     },
     {
-      "id": 7,
+      "id": "7",
       "nombre": "ANILLO ROCKERO",
       "costo": 1000,
       "precio": 1500,
@@ -85,7 +85,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-rockero.jpg"
     },
     {
-      "id": 8,
+      "id": "8",
       "nombre": "ANILLO SELLO",
       "costo": 1100,
       "precio": 1650,
@@ -97,7 +97,7 @@ const data=[
       "imagen": "/assets/img/anillo/plata/anillo-plata-sello-hombre.jpg"
     },
     {
-      "id": 9,
+      "id": "9",
       "nombre": "ANILLO CON BRILLANTES",
       "costo": 500,
       "precio": 750,
@@ -109,7 +109,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-con-brillantes.png"
     },
     {
-      "id": 10,
+      "id": "10",
       "nombre": "ANILLO CORAZON",
       "costo": 600,
       "precio": 900,
@@ -121,7 +121,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpeg"
     },
     {
-      "id": 11,
+      "id": "11",
       "nombre": "ANILLO AGUA MARINA",
       "costo": 700,
       "precio": 1050,
@@ -133,7 +133,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-agua-marina-hombre.jpg"
     },
     {
-      "id": 12,
+      "id": "12",
       "nombre": "ANILLO BUHO",
       "costo": 500,
       "precio": 750,
@@ -145,7 +145,7 @@ const data=[
       "imagen": "/assets/img/pulseras/anillo/acero/anillo-acero-buho.jpg"
     },
     {
-      "id": 13,
+      "id": "13",
       "nombre": "ANILLO CORAZONES COLORES",
       "costo": 600,
       "precio": 900,
@@ -157,7 +157,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-corazones-colores.jpg"
     },
     {
-      "id": 14,
+      "id": "14",
       "nombre": "ANILLO DOBLE V",
       "costo": 700,
       "precio": 1050,
@@ -169,7 +169,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-doble-v-.jpg"
     },
     {
-      "id": 15,
+      "id": "15",
       "nombre": "ANILLO FAMILIA",
       "costo": 500,
       "precio": 750,
@@ -181,7 +181,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-familia.jpg"
     },
     {
-      "id": 16,
+      "id": "16",
       "nombre": "ANILLO SELLO",
       "costo": 600,
       "precio": 900,
@@ -193,7 +193,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-sello.jpg"
     },
     {
-      "id": 17,
+      "id": "17",
       "nombre": "ANILLO TRIPLE V",
       "costo": 700,
       "precio": 1050,
@@ -205,7 +205,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-triple-v.jpg"
     },
     {
-      "id": 18,
+      "id": "18",
       "nombre": "ALIANZAS 18K",
       "costo": 5000,
       "precio": 7500,
@@ -217,7 +217,7 @@ const data=[
       "imagen": "/assets/img/anillo/oro/alianzas-oro-18-kilates.jpg"      
     },
     {
-      "id": 19,
+      "id": "19",
       "nombre": "ANILLO CALADO",
       "costo": 6000,
       "precio": 9000,
@@ -229,7 +229,7 @@ const data=[
       "imagen": "/assets/img/anillo/oro/anillo-oro-amarillo-calado.jpg"
     },
     {
-      "id": 20,
+      "id": "20",
       "nombre": "ANILLO CORAZON",
       "costo": 6500,
       "precio": 9750,
@@ -241,7 +241,7 @@ const data=[
       "imagen": "/assets/img/anillo/oro/anillo-oro-corazon.jpg"
     },
     {
-      "id": 21,
+      "id": "21",
       "nombre": "ANILLO MEDIO SIN FIN",
       "costo": 5000,
       "precio": 7500,
@@ -253,7 +253,7 @@ const data=[
       "imagen": "/assets/img/anillo/oro/anillo-oro-medio-sin-fin.jpg"
     },
     {
-      "id": 22,
+      "id": "22",
       "nombre": "ANILLO V CRISTAL",
       "costo": 6000,
       "precio": 9000,
@@ -265,7 +265,7 @@ const data=[
       "imagen": "/assets/img/anillo/oro/anillo-oro-v-cristal.jpg"
     },
     {
-      "id": 23,
+      "id": "23",
       "nombre": "DIJE MANZANITAS",
       "costo": 600,
       "precio": 900,
@@ -277,7 +277,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-manzanitas.jpg"
     },
     {
-      "id": 24,
+      "id": "24",
       "nombre": "DIJE ARBOL",
       "costo": 700,
       "precio": 1050,
@@ -289,7 +289,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-arbol.jpg"
     },
     {
-      "id": 25,
+      "id": "25",
       "nombre": "DIJE CORAZON",
       "costo": 800,
       "precio": 1200,
@@ -301,7 +301,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-corazon.jpg"
     },
     {
-      "id": 26,
+      "id": "26",
       "nombre": "DIJE CORONA",
       "costo": 600,
       "precio": 900,
@@ -313,7 +313,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-corona.jpg"
     },
     {
-      "id": 27,
+      "id": "27",
       "nombre": "DIJE MANO ",
       "costo": 700,
       "precio": 1050,
@@ -325,7 +325,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-mano.jpg"
     },
     {
-      "id": 28,
+      "id": "28",
       "nombre": "DIJE MARIPOSA",
       "costo": 800,
       "precio": 1200,
@@ -337,7 +337,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-mariposa.jpg"
     },
     {
-      "id": 29,
+      "id": "29",
       "nombre": "DIJE PLANETA",
       "costo": 700,
       "precio": 1050,
@@ -349,7 +349,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-planeta.jpg"
     },
     {
-      "id": 30,
+      "id": "30",
       "nombre": "DIJE TREBOL",
       "costo": 800,
       "precio": 1200,
@@ -361,7 +361,7 @@ const data=[
       "imagen": "/assets/img/dijes/acero/dije-acero-trebol.jpg"
     },
     {
-      "id": 31,
+      "id": "31",
       "nombre": "DIJE ATRAPASUEÑO",
       "costo": 6000,
       "precio": 9000,
@@ -373,7 +373,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-atrapa-sueño.jpg"
     },
     {
-      "id": 32,
+      "id": "32",
       "nombre": "DIJE BOCA",
       "costo": 6500,
       "precio": 9750,
@@ -385,7 +385,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-boca.jpg"
     },
     {
-      "id": 33,
+      "id": "33",
       "nombre": "DIJE CORAZON",
       "costo": 7000,
       "precio": 10500,
@@ -397,7 +397,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-corazon.jpg"
     },
     {
-      "id": 34,
+      "id": "34",
       "nombre": "DIJE DELFIN",
       "costo": 8000,
       "precio": 12000,
@@ -409,7 +409,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-delfin.jpg"
     },
     {
-      "id": 35,
+      "id": "35",
       "nombre": "DIJE DINERO ",
       "costo": 7000,
       "precio": 10500,
@@ -421,7 +421,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-dinero.jpg"
     },
     {
-      "id": 36,
+      "id": "36",
       "nombre": "DIJE ESCULAPIO",
       "costo": 6000,
       "precio": 9000,
@@ -433,7 +433,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-esculapio.jpg"
     },
     {
-      "id": 37,
+      "id": "37",
       "nombre": "DIJE CON ESMERALDA",
       "costo": 6500,
       "precio": 9750,
@@ -445,7 +445,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
     },
     {
-      "id": 38,
+      "id": "38",
       "nombre": "DIJE ESPADA",
       "costo": 8000,
       "precio": 12000,
@@ -457,7 +457,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-con-esmeralda.jpg"
     },
     {
-      "id": 39,
+      "id": "39",
       "nombre": "DIJE MARIPOSA",
       "costo": 6500,
       "precio": 9750,
@@ -469,7 +469,7 @@ const data=[
       "imagen": "/assets/img/dijes/oro/dije-oro-mariposa.jpg"
     },
     {
-      "id": 40,
+      "id": "40",
       "nombre": "DIJE ALA",
       "costo": 2500,
       "precio": 3750,
@@ -481,7 +481,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-ala.jpg"
     },
     {
-      "id": 41,
+      "id": "41",
       "nombre": "DIJE ARBOL",
       "costo": 3000,
       "precio": 4500,
@@ -493,7 +493,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-arbol.jpg"
     },
     {
-      "id": 42,
+      "id": "42",
       "nombre": "DIJE BUHO",
       "costo": 3500,
       "precio": 5250,
@@ -505,7 +505,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-buho.jpg"
     },
     {
-      "id": 43,
+      "id": "43",
       "nombre": "DIJE CORAZON",
       "costo": 3500,
       "precio": 5250,
@@ -517,7 +517,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-corazon.jpg"
     },
     {
-      "id": 44,
+      "id": "44",
       "nombre": "DIJE CRUZ",
       "costo": 3500,
       "precio": 5250,
@@ -529,7 +529,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-cruz.jpg"
     },
     {
-      "id": 45,
+      "id": "45",
       "nombre": "DIJE INFINITO ",
       "costo": 3500,
       "precio": 5250,
@@ -541,7 +541,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-infinito.jpg"
     },
     {
-      "id": 46,
+      "id": "46",
       "nombre": "DIJE MARGARITA",
       "costo": 3500,
       "precio": 5250,
@@ -553,7 +553,7 @@ const data=[
       "imagen": "/assets/img/dijes/plata/dije-plata-margarita.jpg"
     },
     {
-      "id": 47,
+      "id": "47",
       "nombre": "PULSERA BOLITAS",
       "costo": 800,
       "precio": 1200,
@@ -565,7 +565,7 @@ const data=[
       "imagen": "/assets/img/anillo/acero/anillo-acero-corazon.jpg"
     },
     {
-      "id": 48,
+      "id": "48",
       "nombre": "PULSRA CON DIJES",
       "costo": 900,
       "precio": 1350,
@@ -577,7 +577,7 @@ const data=[
       "imagen": "/assets/img/pulseras/acero/pulsera-acero-con-dijes.jpg"
     },
     {
-      "id": 49,
+      "id": "49",
       "nombre": "PULSERA CON FLOR",
       "costo": 1000,
       "precio": 1500,
@@ -589,7 +589,7 @@ const data=[
       "imagen": "/assets/img/pulseras/acero/pulsera-acero-con-flor.jpg"
     },
     {
-      "id": 50,
+      "id": "50",
       "nombre": "PULSRA IDENTIFICACION",
       "costo": 1000,
       "precio": 1500,
@@ -601,7 +601,7 @@ const data=[
       "imagen": "/assets/img/pulseras/acero/pulsera-acero-identificacion.jpg"
     },
     {
-      "id": 51,
+      "id": "51",
       "nombre": "PULSERA INFINITO",
       "costo": 900,
       "precio": 1350,
@@ -613,7 +613,7 @@ const data=[
       "imagen": "/assets/img/pulseras/acero/pulsera-acero-infinito.jpg"
     },
     {
-      "id": 52,
+      "id": "52",
       "nombre": "PULSERA ESCLAVA",
       "costo": 800,
       "precio": 1200,
@@ -625,7 +625,7 @@ const data=[
       "imagen": "/assets/img/pulseras/acero/pulsera-acero-esclava.jpg"
     },
     {
-      "id": 53,
+      "id": "53",
       "nombre": "PULSERA IDENTIFICACION",
       "costo": 6800,
       "precio": 10200,
@@ -637,7 +637,7 @@ const data=[
       "imagen": "/assets/img/pulseras/oro/pulsera-oro-identificacion.jpg"
     },
     {
-      "id": 54,
+      "id": "54",
       "nombre": "PULSERA CLAPTON",
       "costo": 3200,
       "precio": 4800,
@@ -649,7 +649,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-clapton.jpg"
     },
     {
-      "id": 55,
+      "id": "55",
       "nombre": "CORONA CON CIERRE",
       "costo": 3800,
       "precio": 5700,
@@ -661,7 +661,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-cierre-marinero.jpg"
     },
     {
-      "id": 56,
+      "id": "56",
       "nombre": "PULSERA FIGARO",
       "costo": 4000,
       "precio": 6000,
@@ -673,7 +673,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-figaro-3x1.jpg"
     },
     {
-      "id": 57,
+      "id": "57",
       "nombre": "PULSERA GRUME",
       "costo": 3200,
       "precio": 4800,
@@ -685,7 +685,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-grume.jpg"
     },
     {
-      "id": 58,
+      "id": "58",
       "nombre": "PULSERA MALLA",
       "costo": 3800,
       "precio": 5700,
@@ -697,7 +697,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-malla.jpg"
     },
     {
-      "id": 59,
+      "id": "59",
       "nombre": "PULSERA SOGA",
       "costo": 4000,
       "precio": 6000,
@@ -709,7 +709,7 @@ const data=[
       "imagen": "/assets/img/pulseras/plata/pulsera-plata-soga.jpg"
     },
     {
-      "id": 60,
+      "id": "60",
       "nombre": "PULSERA VENECIANA",
       "costo": 4000,
       "precio": 6000,

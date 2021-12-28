@@ -16,9 +16,9 @@ function ItemDetailContainer() {
         setLoading(true);
         const getProducto= new Promise((res)=>{
             setTimeout(()=>{
-                const dato=data.find((producto) => producto.id === itemId)                                 
+                const dato =data.find((producto) => producto.id === itemId);                                 
                 res(dato)
-                //console.log(data)
+                console.log(dato)
             },1000)
         })
         getProducto.then((res)=>{
