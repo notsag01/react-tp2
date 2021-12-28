@@ -41,3 +41,25 @@ padding: 1rem;
 .card h1{
   font-size: 1rem;
 }
+/* detail */
+.detail{
+  margin: 2rem 0 2rem 0;
+  border: black 1px solid;
+  border-radius: 15px;
+}
+.detail img{
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+.detail h1{
+  text-align: center;
+}
+.detail h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.detail h6{
+  text-align: center;
+  font-size: 2rem;
+}
