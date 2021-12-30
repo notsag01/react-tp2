@@ -19,7 +19,7 @@ function Navegador({titulo}) {
                 <div className="col-10">
                     <Navs/>
                 </div>
-                <div className="col-2">
+                <div className="col-2 d-flex align-items-center justify-content-center">
                     <CartWidget/>
                 </div>
             </div>
