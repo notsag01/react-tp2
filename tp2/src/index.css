@@ -31,7 +31,7 @@ padding: 1rem;
 }
 /* /componente/item */
 .card{
-  border: pink solid 1px;
+  border: palevioletred solid 1px;
   margin: 1rem;
   padding: .5rem;
   background-image: linear-gradient( #f8dfe3,  white);
@@ -59,14 +59,17 @@ padding: 1rem;
 /* detail */
 .detail{
   margin: 2rem 0 2rem 0;
-  border: black 1px solid;
+  border: palevioletred 1px solid;
   border-radius: 15px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
 }
 .detail img{
   width: 400px;
   height: 400px;
   object-fit: cover;
   padding: 1rem;
+  border-radius: 50%;
 }
 .detail h1{
   text-align: center;
