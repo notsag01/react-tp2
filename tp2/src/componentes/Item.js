@@ -11,7 +11,7 @@ export function Item({...producto}) {
                     <Link to={`/producto/${producto.id}`}>
                         <img src={producto.imagen} alt={producto.id}></img>
                         <h1> {producto.nombre} </h1>
-                        <span> {producto.precio} </span>
+                        <span> ${producto.precio} </span>
                     </Link>
                 </div>                
             </div>

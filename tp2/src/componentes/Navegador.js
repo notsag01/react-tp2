@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Navs from "./Navs"
 
 
@@ -9,7 +10,7 @@ function Navegador({titulo}) {
                 <div className="col"></div>
                 <div className="col">
                     
-                   <h1 className="titulo"> {titulo} </h1> 
+                   <Link to={`/`}> <h1 className="titulo"> {titulo} </h1> </Link>
                 </div>
                 <div className="col"></div>
             </div>
