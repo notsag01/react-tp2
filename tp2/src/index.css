@@ -31,10 +31,12 @@ padding: 1rem;
 }
 /* /componente/item */
 .card{
-  border: black solid 1px;
+  border: pink solid 1px;
   margin: 1rem;
   padding: .5rem;
   background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
+
 }
 .card img{
   width: 150px;
