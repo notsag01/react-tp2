@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import CartWidget from './CartWidget';
 import Navs from "./Navs"
 
 
@@ -14,8 +15,13 @@ function Navegador({titulo}) {
                 </div>
                 <div className="col"></div>
             </div>
-            <div>
-                <Navs/>
+            <div className="row">
+                <div className="col-10">
+                    <Navs/>
+                </div>
+                <div className="col-2">
+                    <CartWidget/>
+                </div>
             </div>
         </div>
     );
