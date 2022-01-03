@@ -7,10 +7,17 @@ function ItemLista ({productos}) {
     return (
         <section className="container">
             <div className="row">
-            {productos.map((producto)=>(
+                <div className='col-md-4 '></div>
+                <div className='col-md-8 '>
+                    <div className='container mx-1'>
+                        <div className='row'>
+                            {productos.map((producto)=>(
 
-            <Item  {...producto} key={producto.id}/>
-            ))}
+                                <Item  {...producto} key={producto.id}/>
+                            ))}
+                            </div>
+                        </div>
+                    </div>
             </div>
         </section>
     );
