@@ -18,6 +18,11 @@ code {
   text-decoration: none;
   color: black;
 }
+.logo{
+  height: 10rem;
+  width: 10rem;
+  margin: 0 0 0 1rem;
+}
 
 .navsDeCategorias{
 text-align: center;

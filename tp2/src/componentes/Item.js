@@ -16,6 +16,7 @@ export function Item({...producto}) {
                             <h1> {producto.nombre} </h1>
                             <h6> id:{producto.id}</h6>
                             <span> ${producto.precio} </span>
+                            {/* <button> COMPRAR</button> */}
                         </section>
                     </Link>
                 </div>                
