@@ -41,11 +41,7 @@ padding: 1rem;
 .cartWidget{
   font-size: .5rem;
 }
-@media only screen and(min-width:768px) {
-  .cartWidget i{
-    /* font-size: .75rem; */
-  }
-}
+
 /* /componente/item */
 .card{
   border: palevioletred solid 1px;

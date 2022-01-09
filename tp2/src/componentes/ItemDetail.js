@@ -2,6 +2,12 @@ import React from 'react';
 
 
 function ItemDetail({id, nombre, imagen, precio}) {
+
+    const sendCarrito=(event)=>{
+        event.preventDefault();
+        console.log("hola!")
+    }
+    
     return (
         <div className="container">
             <div className="row justify-content-center detail">
@@ -12,6 +18,7 @@ function ItemDetail({id, nombre, imagen, precio}) {
                     <h1> {nombre} </h1>
                     <h3> ${precio} </h3>
                     <h6> ID:{id}</h6>
+                    <button id={id} onClick={sendCarrito}>COMPRAR</button>
                 </div>
             </div>
         </div>
