@@ -1,11 +1,11 @@
-import React, {useContext, useState} from 'react';
+import React, {useContext} from 'react';
 import { CarritoContext } from "../context/CarritoContext";
 
 
 
 function ItemWidgetContainer() {
     const {carrito}=useContext(CarritoContext)
-    const [productos, setProductos]=useState([carrito])
+    /* const [productos, setProductos]=useState([carrito]) */
     console.log(carrito)
 
     return (
@@ -20,6 +20,11 @@ function ItemWidgetContainer() {
             <div>
                 {carrito.map((productos)=>{
                     console.log(productos.nombre)
+                    return(
+                        <div key={productos.id}>
+                            <h1> {productos.nombre} </h1>
+                        </div>
+                    )
                     
                 })}
             </div>
