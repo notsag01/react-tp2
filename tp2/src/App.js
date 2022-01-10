@@ -9,6 +9,7 @@ import Navegador from "./componentes/Navegador"
 import ItemContainer from "./componentes/ItemContainer"
 import ItemDetailContainer from "./componentes/DetailContainer"
 import { CarritoContextProvider } from './context/CarritoContext';
+import ItemWidgetContainer from './componentes/ItemWidgetContainer';
 
 
 
@@ -17,6 +18,11 @@ function App() {
     <BrowserRouter>
       <Navegador titulo="MI PAGINA"/>
       <Switch>
+        <Route path="/cartWidget">
+          <CarritoContextProvider>
+            <ItemWidgetContainer/>
+          </CarritoContextProvider>
+        </Route>       
         <Route path="/categoria/:catId">
           <ItemContainer/>
         </Route>

@@ -5,11 +5,11 @@ import {CarritoContext} from "../context/CarritoContext"
 function ItemDetail({id, nombre, imagen, precio}) {
     const {addProductoCarrito}=useContext(CarritoContext)
 
-    const sendCarrito=(event)=>{
-        event.preventDefault();
+    const sendCarrito=()=>{
+        
         //console.log("hola!")
         addProductoCarrito(nombre,precio,id)
-        console.log(addProductoCarrito)
+        console.log(nombre,precio,id)
     }
     
     return (

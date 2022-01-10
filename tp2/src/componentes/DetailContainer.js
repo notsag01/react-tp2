@@ -18,7 +18,7 @@ function ItemDetailContainer() {
             setTimeout(()=>{
                 const dato =data.find((producto) => producto.id === itemId);                                 
                 res(dato)
-                console.log(dato)
+                //console.log(dato)
             },1000)
         })
         getProducto.then((res)=>{
