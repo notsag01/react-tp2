@@ -8,6 +8,7 @@ import {
 import Navegador from "./componentes/Navegador"
 import ItemContainer from "./componentes/ItemContainer"
 import ItemDetailContainer from "./componentes/DetailContainer"
+import { CarritoContextProvider } from './context/CarritoContext';
 
 
 
@@ -20,7 +21,9 @@ function App() {
           <ItemContainer/>
         </Route>
         <Route path="/producto/:itemId">
-          <ItemDetailContainer/>
+          <CarritoContextProvider>
+            <ItemDetailContainer/>
+          </CarritoContextProvider>
         </Route>
         <Route exact path="/">
           <ItemContainer/>

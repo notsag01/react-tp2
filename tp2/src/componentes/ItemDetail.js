@@ -1,11 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import {CarritoContext} from "../context/CarritoContext"
 
 
 function ItemDetail({id, nombre, imagen, precio}) {
+    const {addProductoCarrito}=useContext(CarritoContext)
 
     const sendCarrito=(event)=>{
         event.preventDefault();
-        console.log("hola!")
+        //console.log("hola!")
+        addProductoCarrito(nombre,precio,id)
+        console.log(addProductoCarrito)
     }
     
     return (
