@@ -15,27 +15,25 @@ import ItemWidgetContainer from './componentes/ItemWidgetContainer';
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navegador titulo="MI PAGINA"/>
-      <Switch>
-        <Route path="/cartWidget">
-          <CarritoContextProvider>
+    <CarritoContextProvider>
+      <BrowserRouter>
+        <Navegador titulo="MI PAGINA"/>
+        <Switch>
+          <Route path="/cartWidget">
             <ItemWidgetContainer/>
-          </CarritoContextProvider>
-        </Route>       
-        <Route path="/categoria/:catId">
-          <ItemContainer/>
-        </Route>
-        <Route path="/producto/:itemId">
-          <CarritoContextProvider>
-            <ItemDetailContainer/>
-          </CarritoContextProvider>
-        </Route>
-        <Route exact path="/">
-          <ItemContainer/>
-        </Route>
-      </Switch>
-    </BrowserRouter>
+          </Route>       
+          <Route path="/categoria/:catId">
+            <ItemContainer/>
+          </Route>
+          <Route path="/producto/:itemId">            
+            <ItemDetailContainer/>            
+          </Route>
+          <Route exact path="/">
+            <ItemContainer/>
+          </Route>
+        </Switch>
+      </BrowserRouter>
+    </CarritoContextProvider>
   )
   
    
