@@ -19,18 +19,14 @@ function App() {
     <BrowserRouter>
       <Navegador titulo="MI PAGINA"/>
       <Switch>
-        <Route path="/cartWidget">
-          
-            <ItemWidgetContainer/>
-          
+        <Route path="/cartWidget">          
+          <ItemWidgetContainer/>          
         </Route>       
         <Route path="/categoria/:catId">
           <ItemContainer/>
         </Route>
-        <Route path="/producto/:itemId">
-          
-            <ItemDetailContainer/>
-          
+        <Route path="/producto/:itemId">          
+          <ItemDetailContainer/>          
         </Route>
         <Route exact path="/">
           <ItemContainer/>
