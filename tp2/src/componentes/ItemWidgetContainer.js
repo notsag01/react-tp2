@@ -32,6 +32,7 @@ function ItemWidgetContainer() {
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
                             </div>
                             <div>
+                                {/* CONTADORES */}
                                 <button onClick={()=>setContador(contador + 1)}> + </button>
                                 <p>cantidad:{contador}</p>
                                 <button onClick={()=>setContador(contador - 1)}> + </button>

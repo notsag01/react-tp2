@@ -6,7 +6,17 @@ export const CarritoContextProvider=({children})=>{
     const[carrito, setCarrito]=useState([])
 
     const addProductoCarrito=(nombre, precio,id)=>{
-        setCarrito([...carrito, {nombre,precio,id}])
+
+        const setAddProducto= carrito.find((producto)=>producto.id === id)
+
+        if(setAddProducto === undefined){
+            setCarrito([...carrito, {nombre,precio,id}])
+        }else{
+            alert("Hola")
+        }
+
+
+
     }
 
     const removeProducto=(id)=>{
