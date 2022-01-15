@@ -9,9 +9,14 @@ export const CarritoContextProvider=({children})=>{
         setCarrito([...carrito, {nombre,precio,id}])
     }
 
+    const removeProducto=(id)=>{
+        const setRemove=carrito.filter((producto)=>producto.id!== id)
+        setCarrito(setRemove)
+    }
+
 
     return(
-        <CarritoContext.Provider value={{carrito, addProductoCarrito}}>
+        <CarritoContext.Provider value={{carrito, addProductoCarrito, removeProducto}}>
             {children}
         </CarritoContext.Provider>
     )

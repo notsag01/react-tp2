@@ -4,9 +4,10 @@ import { CarritoContext } from "../context/CarritoContext";
 
 
 function ItemWidgetContainer() {
-    const {carrito}=useContext(CarritoContext)
+    const {carrito, removeProducto}=useContext(CarritoContext)
     /* const [productos, setProductos]=useState([carrito]) */
     console.log(carrito)
+    
 
     return (
             <div className="container">
@@ -23,6 +24,9 @@ function ItemWidgetContainer() {
                     return(
                         <div key={productos.id}>
                             <h1> {productos.nombre} </h1>
+                            <h3> ${productos.precio} </h3>
+                            <h6> ID:{productos.id}</h6>
+                            <button id={productos.id} onClick={()=>removeProducto(productos.id)} >COMPRAR</button>
                         </div>
                     )
                     
