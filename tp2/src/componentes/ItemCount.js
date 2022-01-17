@@ -11,6 +11,7 @@ export function ItemCount() {
         const disminuyeContador=()=>{
             setContador(contador-1)
         }
+        
 
     return (
         <div>

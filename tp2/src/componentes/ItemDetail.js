@@ -24,8 +24,8 @@ function ItemDetail({id, nombre, imagen, precio}) {
                     <h3> ${precio} </h3>
                     <h6> ID:{id}</h6>
                     {/* AGREGO AL CARRITO */}
-                    <ItemCount/>
-                    <button id={id} onClick={sendCarrito}>COMPRAR</button>
+                    <ItemCount addProductoCarrito={addProductoCarrito}/>
+                    <button id={id} onClick={sendCarrito}>COMPRAR</button>                    
                 </div>
             </div>
         </div>
