@@ -4,7 +4,7 @@ export const CarritoContext =createContext();
 
 export const CarritoContextProvider=({children})=>{
     const[carrito, setCarrito]=useState([])
-
+    const [contador, setContador]=useState(1)
 
 
     /* FUNCION PARA AGREGAR AL CARRITO CON LA VERIFICACION DE QUE NO SE REPITAN */
@@ -24,14 +24,32 @@ export const CarritoContextProvider=({children})=>{
         const setRemove=carrito.filter((producto)=>producto.id!== id)
         setCarrito(setRemove)
     }
+    /* AUMENTA CONTADOR  */
+    const aumentarContador=()=>{
+        setContador(contador+1)
+    }
+    /* DISMINUYE CONTADOR */
+    const disminuyeContador=()=>{
+        setContador(contador-1)
+    }
+
+
     /*  */
     const subtotal=()=>{
-        return carrito.reduce((acc, curr)=>acc  + curr , 0)
+        return carrito.reduce((precio, curr)=> precio  + curr.precio , 0)
     }
     
 
     return(
-        <CarritoContext.Provider value={{carrito, addProductoCarrito, removeProducto, subtotal}}>
+        <CarritoContext.Provider value={{
+        carrito,
+        addProductoCarrito, 
+        removeProducto,
+        subtotal,
+        contador,
+        aumentarContador,
+        disminuyeContador,
+        }}>
             {children}
         </CarritoContext.Provider>
     )
