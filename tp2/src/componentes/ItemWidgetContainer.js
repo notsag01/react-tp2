@@ -5,7 +5,7 @@ import { CarritoContext } from "../context/CarritoContext";
 
 function ItemWidgetContainer() {
     const {carrito, removeProducto}=useContext(CarritoContext)
-    const [contador, setContador]=useState(0)
+    const [contador, setContador]=useState(1)
     /* const [productos, setProductos]=useState([carrito]) */
     console.log(carrito)
     
