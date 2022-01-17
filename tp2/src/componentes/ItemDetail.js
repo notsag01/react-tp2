@@ -9,7 +9,7 @@ function ItemDetail({id, nombre, imagen, precio}) {
         
         //console.log("hola!")
         addProductoCarrito(nombre,precio,id)
-        console.log(nombre,precio,id)
+        //console.log(nombre,precio,id)
     }
     
     return (

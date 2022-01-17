@@ -24,10 +24,14 @@ export const CarritoContextProvider=({children})=>{
         const setRemove=carrito.filter((producto)=>producto.id!== id)
         setCarrito(setRemove)
     }
-
+    /*  */
+    const subtotal=()=>{
+        return carrito.reduce((acc, curr)=>acc  + curr , 0)
+    }
+    
 
     return(
-        <CarritoContext.Provider value={{carrito, addProductoCarrito, removeProducto}}>
+        <CarritoContext.Provider value={{carrito, addProductoCarrito, removeProducto, subtotal}}>
             {children}
         </CarritoContext.Provider>
     )
