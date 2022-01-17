@@ -1,5 +1,6 @@
 import React, { useContext } from 'react';
 import {CarritoContext} from "../context/CarritoContext"
+import { ItemCount } from './ItemCount';
 
 
 function ItemDetail({id, nombre, imagen, precio}) {
@@ -23,6 +24,7 @@ function ItemDetail({id, nombre, imagen, precio}) {
                     <h3> ${precio} </h3>
                     <h6> ID:{id}</h6>
                     {/* AGREGO AL CARRITO */}
+                    <ItemCount/>
                     <button id={id} onClick={sendCarrito}>COMPRAR</button>
                 </div>
             </div>

@@ -115,3 +115,12 @@ padding: 1rem;
 .tituloCarrito{
   text-align: center;
 }
+
+/* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
+.contador{
+  
+  margin: 0 1rem 1rem 1rem;
+}
+.btnContador{
+  margin: 0 1rem 1rem 1rem;
+}
