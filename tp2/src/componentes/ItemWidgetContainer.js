@@ -22,7 +22,7 @@ function ItemWidgetContainer() {
                 {carrito.map((productos)=>{
                     //console.log(productos.nombre)
                     return(
-                        <>
+                        
                         <div key={productos.id}>
                             <h1> {productos.nombre} </h1>
                             <h3> ${productos.precio} </h3>
@@ -40,7 +40,7 @@ function ItemWidgetContainer() {
                                 <p> subtotal: {subtotal()}</p>
                             </div>
                         </div>
-                        </>
+                        
                     )
                     
                 })}
