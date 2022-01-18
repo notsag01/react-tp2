@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ItemLista from "./ItemLista"
 import data from "../mock/Mock"
 import {useParams} from "react-router-dom"
+import {getFirestore} from '../firebase/index'
 
 //console.log(data)
 
@@ -29,6 +30,12 @@ function ItemContainer() {
         .finally(()=>setLoading(false))
     },[catId])
     //console.log(productos)
+
+    useEffect(()=>{
+        const bd= getFirestore()
+        const itemCollection= bd.collection('data');
+        itemCollection.get().then(value=> value.docs.map(e=>console.log(e.data())))
+    },[])
     
     return loading ? (<h2> CARGANDO </h2>) : (
         <div>

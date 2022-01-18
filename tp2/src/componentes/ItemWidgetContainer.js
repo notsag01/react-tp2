@@ -27,6 +27,8 @@ function ItemWidgetContainer() {
                             <h1> {productos.nombre} </h1>
                             <h3> ${productos.precio} </h3>
                             <h6> ID:{productos.id}</h6>
+                            <h6> cantidad: </h6>
+
                             <div>
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
                             </div>                            
