@@ -15,7 +15,7 @@ export const CarritoContextProvider=({children})=>{
         if(setAddProducto === undefined){
             setCarrito([...carrito, {nombre,precio,id}])
         }else{
-            alert("Hola")
+           setContador(contador+1)
         }
     }
 
