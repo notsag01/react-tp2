@@ -15,7 +15,7 @@ export function ItemCount() {
 
     return (
         <div>
-            <div className="row">
+            <div className="row d-flex justify-content-center align-items-center my-3">
                 {/* CONTADORES */}
                 <button className="btnContador" onClick={()=>aumentarContador()}> + </button>
                 <p className="contador">{contador}</p>

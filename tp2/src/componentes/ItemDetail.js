@@ -25,7 +25,9 @@ function ItemDetail({id, nombre, imagen, precio}) {
                     <h6> ID:{id}</h6>
                     {/* AGREGO AL CARRITO */}
                     <ItemCount addProductoCarrito={addProductoCarrito}/>
-                    <button id={id} onClick={sendCarrito}>COMPRAR</button>                    
+                    <div className="d-flex justify-content-center">
+                        <button id={id} onClick={sendCarrito}>COMPRAR</button>                    
+                    </div>
                 </div>
             </div>
         </div>
