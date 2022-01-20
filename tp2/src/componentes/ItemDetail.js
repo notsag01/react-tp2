@@ -1,4 +1,5 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import {CarritoContext} from "../context/CarritoContext"
 import { ItemCount } from './ItemCount';
 
@@ -6,12 +7,18 @@ import { ItemCount } from './ItemCount';
 function ItemDetail({id, nombre, imagen, precio}) {
     const {addProductoCarrito}=useContext(CarritoContext)
 
-    const sendCarrito=()=>{
+    const[agregado, setAgregado]=useState(false)
+
+    const onAdd=(contador)=>{
         
         //console.log("hola!")
-        addProductoCarrito(nombre,precio,id)
+        addProductoCarrito(nombre,precio,id, contador)
         //console.log(nombre,precio,id)
+
+        setAgregado(true)
     }
+
+    
     
     return (
         <div className="container">
@@ -24,8 +31,7 @@ function ItemDetail({id, nombre, imagen, precio}) {
                     <h3> ${precio} </h3>
                     <h6> ID:{id}</h6>
                     {/* AGREGO AL CARRITO */}
-                    <ItemCount addProductoCarrito={addProductoCarrito}/>
-                    <button id={id} onClick={sendCarrito}>COMPRAR</button>                    
+                    {agregado? <Link to="/cartWidget"> Ir al carrito </Link> : <ItemCount onAdd={onAdd}/>}
                 </div>
             </div>
         </div>

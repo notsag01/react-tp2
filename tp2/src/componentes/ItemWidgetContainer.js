@@ -1,10 +1,11 @@
 import React, {useContext} from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CarritoContext } from "../context/CarritoContext";
 
 
 
 function ItemWidgetContainer() {
-    const {carrito, removeProducto, subtotal}=useContext(CarritoContext)
+    const {carrito, removeProducto, precioTotal}=useContext(CarritoContext)
     /* const [productos, setProductos]=useState([carrito]) */
     //console.log(carrito)
     
@@ -18,6 +19,7 @@ function ItemWidgetContainer() {
                     </div>
                     <div className="col"></div>
                 </div>
+                {carrito.length>0 ? 
             <div>
                 {carrito.map((productos)=>{
                     //console.log(productos.nombre)
@@ -31,14 +33,19 @@ function ItemWidgetContainer() {
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
                             </div>                            
                             <div>
-                                <p> subtotal: {subtotal()}</p>
+                                <p> subtotal: {productos.precio * productos.cantidad }</p>
                             </div>
                         </div>
                         
                     )
                     
                 })}
-            </div>
+                <div>
+                    <h1> TOTAL: {precioTotal()} </h1>
+                </div>
+            </div> 
+            : <Link to="/"> <h1> NO HAY ITEMS- VOLVER A LA PAGINA PRINCIPAL </h1> </Link>
+}
          
         </div>
     );

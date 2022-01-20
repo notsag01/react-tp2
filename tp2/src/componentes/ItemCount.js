@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-export function ItemCount() {
+export function ItemCount({onAdd}) {
     const [contador, setContador]=useState(1)
 
         /* AUMENTA CONTADOR  */
@@ -12,14 +12,16 @@ export function ItemCount() {
             setContador(contador-1)
         }
         
-
-    return (
-        <div>
+        
+        
+        return (
+            <div>
             <div className="row">
                 {/* CONTADORES */}
                 <button className="btnContador" onClick={()=>aumentarContador()}> + </button>
                 <p className="contador">{contador}</p>
                 <button className="btnContador" onClick={()=>disminuyeContador()}> - </button>
+                <button onClick={()=>onAdd(contador)}>COMPRAR</button>                    
             </div>              
         </div>
     );
