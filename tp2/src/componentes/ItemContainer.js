@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import ItemLista from "./ItemLista"
 import data from "../mock/Mock"
 import {useParams} from "react-router-dom"
+import { getFirestore } from '../firebase/indice';
 
 //console.log(data)
 
@@ -29,12 +30,22 @@ function ItemContainer() {
         .finally(()=>setLoading(false))
     },[catId])
     //console.log(productos)
+
+    useEffect(()=>{
+        const basededatos=getFirestore()
+        const dataCollection=basededatos.collection(`data`);
+        dataCollection.get().then(value=> value.docs.map(
+            e=>console.log(e.data)
+        ))
+    },[])
     
     return loading ? (<h2> CARGANDO </h2>) : (
         <div>
             <ItemLista productos={productos}/>
         </div>
     );    
+
+    
 }
 
 export default ItemContainer;
