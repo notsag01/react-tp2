@@ -34,10 +34,13 @@ function ItemContainer() {
     useEffect(()=>{
         const db= getFirestore()
         const dataColletion=db.collection('data')
-        dataColletion.get().then(value=>
-            setProductos(value.docs.map((e)=>
-            e.data())))
-            .finally(()=>setLoading(false))
+        dataColletion.get().then(value=>{
+            let datos=value.docs.map((e)=> {
+                 return{...e.data, id: e.id};
+                });
+                console.log(datos)
+            })
+            
     })
     
     return loading ? (<h2> CARGANDO </h2>) : (
