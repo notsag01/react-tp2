@@ -38,8 +38,10 @@ function ItemContainer() {
             let datos=value.docs.map((e)=> {
                  return{...e.data, id: e.id};
                 });
-                console.log(datos)
+                //console.log(datos)
+                setProductos(datos)
             })
+            .finally(()=>setLoading(false))
             
     })
     
