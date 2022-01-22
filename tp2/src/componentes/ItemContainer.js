@@ -13,7 +13,7 @@ function ItemContainer() {
     const {catId}=useParams();
     //console.log(catId)
 
-    useEffect(()=>{
+    /* useEffect(()=>{
         setLoading(true);
         const getProductos= new Promise((res)=>{
             setTimeout(()=>{
@@ -28,13 +28,15 @@ function ItemContainer() {
             setProductos(res);
         })
         .finally(()=>setLoading(false))
-    },[catId])
+    },[catId]) */
     //console.log(productos)
 
     useEffect(()=>{
         const bd= getFirestore()
         const itemCollection= bd.collection('data');
-        itemCollection.get().then(value=> value.docs.map(e=>console.log(e.data())))
+        itemCollection.get().then(value=> 
+           setProductos( value.docs.map(e=>(e.data()))))
+           .finally(()=>setLoading(false))
     },[])
     
     return loading ? (<h2> CARGANDO </h2>) : (
