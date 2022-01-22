@@ -32,18 +32,14 @@ function ItemContainer() {
     //console.log(productos)
 
     useEffect(()=>{
-        const db= getFirestore()
-        const dataColletion=db.collection('data')
-        dataColletion.get().then(value=>{
-            let datos=value.docs.map((e)=> {
-                 return{...e.data, id: e.id};
-                });
-                //console.log(datos)
-                setProductos(datos)
-            })
-            .finally(()=>setLoading(false))
-            
-    })
+        const bd= getFirestore()
+        const itemCollection= bd.collection('data');
+        itemCollection.get().then(value=>{
+            let datos= value.docs.map(e=>{
+               return{...e.data(), id:e.id}
+            });setProductos(datos)
+        }).finally(()=>setLoading(false))
+    },[])
     
     return loading ? (<h2> CARGANDO </h2>) : (
         <div>
