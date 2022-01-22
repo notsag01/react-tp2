@@ -34,6 +34,7 @@ function ItemWidgetContainer() {
                             </div>                            
                             <div>
                                 <p> subtotal: {productos.precio * productos.cantidad }</p>
+                                <Link to="/formulario">terinar compra </Link>
                             </div>
                         </div>
                         

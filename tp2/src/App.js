@@ -10,6 +10,7 @@ import ItemContainer from "./componentes/ItemContainer"
 import ItemDetailContainer from "./componentes/DetailContainer"
 import { CarritoContextProvider } from './context/CarritoContext';
 import ItemWidgetContainer from './componentes/ItemWidgetContainer';
+import Formulario from './componentes/Formulario'
 
 
 
@@ -19,6 +20,9 @@ function App() {
     <BrowserRouter>
       <Navegador titulo="MI PAGINA"/>
       <Switch>
+        <Route path="/formulario">          
+          <Formulario/>          
+        </Route>       
         <Route path="/cartWidget">          
           <ItemWidgetContainer/>          
         </Route>       
