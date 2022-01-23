@@ -1,7 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import ItemDetail from "./ItemDetail"
-import data from "../mock/Mock"
+//import data from "../mock/Mock"
 import {useParams} from "react-router-dom"
+import {getFirestore} from"../firebase/index"
+
 
 //console.log(data)
 
@@ -12,7 +14,7 @@ function ItemDetailContainer() {
     const {itemId}=useParams();
     //console.log(itemId)
 
-    useEffect(()=>{
+    /* useEffect(()=>{
         setLoading(true);
         const getProducto= new Promise((res)=>{
             setTimeout(()=>{
@@ -25,8 +27,24 @@ function ItemDetailContainer() {
             setProducto(res);
         })
         .finally(()=>setLoading(false))
-    },[itemId])
+    },[itemId]) */
     //console.log(producto)
+
+    useEffect(()=>{
+        const bd= getFirestore()
+        const itemCollection= bd.collection('data');
+        itemCollection.get().then(value=>{
+            let datos= value.docs.map(e=>{
+               return{...e.data(), id:e.id}
+            });
+
+            const auxDatos=datos.find((producto)=>producto.id===itemId)
+            console.log(auxDatos)
+            
+            setProducto(auxDatos)
+            
+        }).finally(()=>setLoading(false))
+    },[itemId])
     
     return loading ? (<h2> CARGANDO </h2>) : (
         <div>

@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 export function Item({...producto}) {
+    console.log(producto.nombre)
     return (
             
             <div className="col-md-6 col-xl-4 ">                
