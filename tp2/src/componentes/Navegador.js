@@ -7,7 +7,7 @@ import Navs from "./Navs"
 function Navegador({titulo}) {
     return (
         <div className="container">
-            <div className="row">
+            <div className="row encabezado">
                             
                 <div className="col"> <Link to={"/"}> <img className='logo' src= "/assets/img/logo/logoII.png" alt='logo'></img> </Link></div>
                 <div className="col d-flex justity-content-center align-items-center">

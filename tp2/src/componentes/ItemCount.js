@@ -16,12 +16,12 @@ export function ItemCount({onAdd}) {
         
         return (
             <div>
-            <div className="row">
+            <div className="row justify-content-center countCss">
                 {/* CONTADORES */}
-                <button className="btnContador" onClick={()=>aumentarContador()}> + </button>
-                <p className="contador">{contador}</p>
                 <button className="btnContador" onClick={()=>disminuyeContador()}> - </button>
-                <button onClick={()=>onAdd(contador)}>COMPRAR</button>                    
+                <p className="contador">{contador}</p>
+                <button className="btnContador" onClick={()=>aumentarContador()}> + </button>
+                <button className='btnComprar' onClick={()=>onAdd(contador)}>COMPRAR</button>                    
             </div>              
         </div>
     );

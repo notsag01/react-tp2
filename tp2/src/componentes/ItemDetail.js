@@ -22,14 +22,13 @@ function ItemDetail({id, nombre, imagen, precio}) {
     
     return (
         <div className="container">
-            <div className="row justify-content-center detail">
+            <div className="row justify-content-around detail">
                 <div className="col-md-4">
                     <img src={imagen} alt={id}></img>
                 </div>
                 <div className="col-md-4">
                     <h1> {nombre} </h1>
                     <h3> ${precio} </h3>
-                    <h6> ID:{id}</h6>
                     {/* AGREGO AL CARRITO */}
                     {agregado? <Link to="/cartWidget"> Ir al carrito </Link> : <ItemCount onAdd={onAdd}/>}
                 </div>

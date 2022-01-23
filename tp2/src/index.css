@@ -12,6 +12,9 @@ code {
     monospace;
 }
 /* Header y Navs */
+.encabezado{
+  background-image: linear-gradient( #f8dfe3,  white);
+}
 .titulo{
   text-align: center;
   margin: 0 0 0 0;
@@ -87,18 +90,20 @@ padding: 1rem;
 
 /* detail */
 .detail{
-  margin: 2rem 0 2rem 0;
+  margin: auto;
   border: palevioletred 1px solid;
   border-radius: 15px;
   background-image: linear-gradient( #f8dfe3,  white);
   box-shadow: 10px 10px 20px pink;
 }
 .detail img{
-  width: 400px;
-  height: 400px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
   padding: 1rem;
   border-radius: 50%;
+  display: block;
+  margin: auto;
 }
 .detail h1{
   text-align: center;
@@ -123,4 +128,9 @@ padding: 1rem;
 }
 .btnContador{
   margin: 0 1rem 1rem 1rem;
+}
+.btnComprar{
+  background-color: pink;
+  display: block;
+  margin: 1rem;
 }
