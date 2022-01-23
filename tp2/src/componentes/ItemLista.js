@@ -3,7 +3,7 @@ import  Item  from "./Item"
 
 
 function ItemLista ({productos}) {
-    /* console.log(productos) */
+    console.log(productos) 
     return (
         <section className="container">
             <div className="row">
