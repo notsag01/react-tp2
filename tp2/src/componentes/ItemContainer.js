@@ -11,7 +11,7 @@ function ItemContainer() {
     const [loading, setLoading]= useState(true)
 
      const {catId}=useParams();
-    console.log(catId)
+    
 
     /* useEffect(()=>{
         setLoading(true);
@@ -37,7 +37,12 @@ function ItemContainer() {
         itemCollection.get().then(value=>{
             let datos= value.docs.map(e=>{
                return{...e.data(), id:e.id}
-            });setProductos(datos)
+            });
+
+            const auxDatos= catId?
+            datos.filter((producto)=>producto.cat2===catId)
+            :datos;
+            setProductos(auxDatos)
             //console.log(datos)
         }).finally(()=>setLoading(false))
     },[catId])
