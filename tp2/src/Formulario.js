@@ -3,21 +3,23 @@ import React, { useState } from 'react';
 function Formulario() {
     const [datos, setDatos]=useState({
         nombre:"",
-        apellido:""
+        apellido:"",
+        telefono:"",
+        email:""
     })
+    //console.log(datos)
 
     const handleChangeInput=(e)=>{
-        console.log(e.target.value)
-        console.log(e.target.nombre)
-        
+        //console.log(e.target.value)
+        setDatos({
+            ...datos,
+            [e.target.name] : e.target.value
+        })
     }
 
     const sendDatos=(e)=>{
         e.preventDefault()
-        setDatos({
-            ...datos,
-            [e.target.nombre] : e.target.value
-        })
+       
     }
 
     return (
@@ -32,6 +34,12 @@ function Formulario() {
                         </div>
                         <div>
                             <input type="text" placeholder="Apellido" onChange={handleChangeInput} name="apellido"></input>
+                        </div>
+                        <div>
+                            <input type="tel" placeholder="Telefono" onChange={handleChangeInput} name="telefono"></input>
+                        </div>
+                        <div>
+                            <input type="mail" placeholder="Email" onChange={handleChangeInput} name="email"></input>
                         </div>
                         <button type="submit">CONFIRMAR</button>
                     </form>
