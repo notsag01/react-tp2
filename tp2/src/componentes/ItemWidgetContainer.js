@@ -1,6 +1,7 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CarritoContext } from "../context/CarritoContext";
+import Formulario from '../Formulario';
 
 
 
@@ -8,6 +9,7 @@ function ItemWidgetContainer() {
     const {carrito, removeProducto, precioTotal}=useContext(CarritoContext)
     /* const [productos, setProductos]=useState([carrito]) */
     //console.log(carrito)
+     const[form, setform]=useState(false)
     
 
     return (
@@ -27,8 +29,7 @@ function ItemWidgetContainer() {
                         
                         <div key={productos.id}>
                             <h1> {productos.nombre} </h1>
-                            <h3> ${productos.precio} </h3>
-                            <h6> ID:{productos.id}</h6>
+                            <h3> ${productos.precio} </h3>                            
                             <div>
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
                             </div>                            
@@ -40,9 +41,15 @@ function ItemWidgetContainer() {
                     )
                     
                 })}
-                <div>
-                    <h1> TOTAL: {precioTotal()} </h1>
+                <div className="row">
+                    <div className="col">
+                        <h1> TOTAL: {precioTotal()} </h1>
+                    </div>
+                    <div className="col">
+                        <button onClick={()=>setform(true)} className="finalizar">FINALIZAR COMPRA</button>
+                    </div>
                 </div>
+                {form === true ? <Formulario/>: ""}
             </div> 
             : <Link to="/"> <h1> NO HAY ITEMS- VOLVER A LA PAGINA PRINCIPAL </h1> </Link>
 }
