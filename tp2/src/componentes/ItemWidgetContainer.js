@@ -1,7 +1,7 @@
 import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CarritoContext } from "../context/CarritoContext";
-import Formulario from '../Formulario';
+import ItemFormulario from './ItemFormulario';
 
 
 
@@ -49,7 +49,7 @@ function ItemWidgetContainer() {
                         <button onClick={()=>setform(true)} className="finalizar">FINALIZAR COMPRA</button>
                     </div>
                 </div>
-                {form === true ? <Formulario/>: ""}
+                {form === true ? <ItemFormulario/>: ""}
             </div> 
             : <Link to="/"> <h1> NO HAY ITEMS- VOLVER A LA PAGINA PRINCIPAL </h1> </Link>
 }
