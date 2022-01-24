@@ -39,7 +39,7 @@ function ItemDetailContainer() {
             });
 
             const auxDatos=datos.find((producto)=>producto.id===itemId)
-            console.log(auxDatos)
+            //console.log(auxDatos)
             
             setProducto(auxDatos)
             

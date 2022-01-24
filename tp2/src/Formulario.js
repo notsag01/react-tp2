@@ -7,7 +7,17 @@ function Formulario() {
     })
 
     const handleChangeInput=(e)=>{
+        console.log(e.target.value)
+        console.log(e.target.nombre)
         
+    }
+
+    const sendDatos=(e)=>{
+        e.preventDefault()
+        setDatos({
+            ...datos,
+            [e.target.nombre] : e.target.value
+        })
     }
 
     return (
@@ -16,10 +26,14 @@ function Formulario() {
             <div className="container">
                 <div className="col"></div>
                 <div className="col">
-                    <form>
+                    <form onSubmit={sendDatos}>
                         <div>
-                            <input type="text" placeholder="Nombre"></input>
+                            <input type="text" placeholder="Nombre" onChange={handleChangeInput} name="nombre"></input>
                         </div>
+                        <div>
+                            <input type="text" placeholder="Apellido" onChange={handleChangeInput} name="apellido"></input>
+                        </div>
+                        <button type="submit">CONFIRMAR</button>
                     </form>
                 </div>
                 <div className="col"></div>

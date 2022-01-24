@@ -7,7 +7,7 @@ export const CarritoContextProvider=({children})=>{
     const[carrito, setCarrito]=useState([])
     const [contador, setContador]=useState(1)
 
-console.log(carrito)
+//console.log(carrito)
 
     /* FUNCION PARA AGREGAR AL CARRITO CON LA VERIFICACION DE QUE NO SE REPITAN */
     const addProductoCarrito=(nombre, precio,id, cont)=>{
