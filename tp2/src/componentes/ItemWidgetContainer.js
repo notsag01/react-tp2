@@ -6,11 +6,14 @@ import {getFirestore} from"../firebase/index";
 
 
 
+
 function ItemWidgetContainer() {
     const {carrito, removeProducto, precioTotal}=useContext(CarritoContext)
     /* const [productos, setProductos]=useState([carrito]) */
     //console.log(carrito)
+    
      const[form, setform]=useState(false)
+     
 
      const onAdd=(datos)=>{
          const db= getFirestore();
@@ -19,8 +22,14 @@ function ItemWidgetContainer() {
          let detalleCompra={
             comprador: datos,
             items: carrito,
+            date: Date.now(),
+            total: precioTotal()
         }
-         orederCollection.add(detalleCompra)
+         orederCollection.add(detalleCompra).then(({id})=>{
+            alert(`Tu pedido tiene el código ${id}`);
+         }).catch(err=>{
+             alert(err)
+         })
         console.log(detalleCompra)
         
      }
