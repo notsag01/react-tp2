@@ -6,6 +6,7 @@ export const CarritoContext =createContext();
 export const CarritoContextProvider=({children})=>{
     const[carrito, setCarrito]=useState([])
     const [contador, setContador]=useState(1)
+    const [nuevaCompra, setNuevaCompra]=useState({})
 
 //console.log(carrito)
 
@@ -35,6 +36,10 @@ export const CarritoContextProvider=({children})=>{
     const disminuyeContador=()=>{
         setContador(contador-1)
     }
+    const detalleCompra=(comprador, items)=>{
+        setNuevaCompra(...nuevaCompra, {comprador, items})
+        
+    }
 
 
     /*  */
@@ -57,6 +62,7 @@ export const CarritoContextProvider=({children})=>{
         aumentarContador,
         disminuyeContador,
         totalItems,
+        detalleCompra,
         }}>
             {children}
         </CarritoContext.Provider>

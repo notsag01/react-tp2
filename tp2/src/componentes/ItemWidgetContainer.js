@@ -12,10 +12,9 @@ function ItemWidgetContainer() {
      const[form, setform]=useState(false)
 
      const onAdd=(datos)=>{
-        console.log(datos)
         let detalleCompra={
             comprador: {...datos},
-            items: {carrito}
+            items: [carrito],
         }
         console.log(detalleCompra)
         
