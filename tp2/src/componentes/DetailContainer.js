@@ -46,7 +46,12 @@ function ItemDetailContainer() {
         }).finally(()=>setLoading(false))
     },[itemId])
     
-    return loading ? (<h2> CARGANDO </h2>) : (
+    return loading ? (
+    <div className="row justify-content-center">
+        <div className="spinner-border text-primary" role="status">
+        <span className="sr-only">Loading...</span>
+        </div>
+    </div>) : (
         <div>
             <ItemDetail {...producto}/>
         </div>
