@@ -10,6 +10,16 @@ function ItemWidgetContainer() {
     /* const [productos, setProductos]=useState([carrito]) */
     //console.log(carrito)
      const[form, setform]=useState(false)
+
+     const onAdd=(datos)=>{
+        console.log(datos)
+        let detalleCompra={
+            comprador: {...datos},
+            items: {carrito}
+        }
+        console.log(detalleCompra)
+        
+     }
     
 
     return (
@@ -49,7 +59,7 @@ function ItemWidgetContainer() {
                         <button onClick={()=>setform(true)} className="finalizar">FINALIZAR COMPRA</button>
                     </div>
                 </div>
-                {form === true ? <ItemFormulario/>: ""}
+                {form === true ? <ItemFormulario onAdd={onAdd}/>: ""}
             </div> 
             : <Link to="/"> <h1> NO HAY ITEMS- VOLVER A LA PAGINA PRINCIPAL </h1> </Link>
 }

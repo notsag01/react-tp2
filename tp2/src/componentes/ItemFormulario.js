@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Formulario() {
+function ItemFormulario({onAdd}) {
     const [datos, setDatos]=useState({
         nombre:"",
         apellido:"",
@@ -19,6 +19,7 @@ function Formulario() {
 
     const sendDatos=(e)=>{
         e.preventDefault()
+       
        
     }
 
@@ -41,7 +42,7 @@ function Formulario() {
                         <div>
                             <input type="mail" placeholder="Email" onChange={handleChangeInput} name="email"></input>
                         </div>
-                        <button type="submit">CONFIRMAR</button>
+                        <button type="submit" onClick={()=>{onAdd(datos)}}>CONFIRMAR</button>
                     </form>
                 </div>
                 <div className="col"></div>
@@ -52,4 +53,4 @@ function Formulario() {
     );
 }
 
-export default Formulario;<h1>formulario</h1>
+export default ItemFormulario;
