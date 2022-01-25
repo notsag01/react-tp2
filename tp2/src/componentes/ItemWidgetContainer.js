@@ -2,7 +2,8 @@ import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CarritoContext } from "../context/CarritoContext";
 import ItemFormulario from './ItemFormulario';
-
+import {getFirestore} from"../firebase/index";
+import "firebase/firestore"
 
 
 function ItemWidgetContainer() {
@@ -12,10 +13,15 @@ function ItemWidgetContainer() {
      const[form, setform]=useState(false)
 
      const onAdd=(datos)=>{
-        let detalleCompra={
-            comprador: {...datos},
-            items: [carrito],
+         const db= getFirestore();
+         const orederCollection=db.collection("order") 
+        
+         let detalleCompra={
+            comprador: datos,
+            items: carrito,
         }
+         orederCollection.add(detalleCompra) 
+
         console.log(detalleCompra)
         
      }
