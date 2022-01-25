@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom/cjs/react-router-dom.min';
 import { CarritoContext } from "../context/CarritoContext";
 import ItemFormulario from './ItemFormulario';
 import {getFirestore} from"../firebase/index";
-import "firebase/firestore"
+
 
 
 function ItemWidgetContainer() {
@@ -20,8 +20,7 @@ function ItemWidgetContainer() {
             comprador: datos,
             items: carrito,
         }
-         orederCollection.add(detalleCompra) 
-
+         orederCollection.add(detalleCompra)
         console.log(detalleCompra)
         
      }
