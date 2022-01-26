@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import CartWidget from './CartWidget';
+import ItemsSearch from './ItemsSearch';
 import Navs from "./Navs"
 
 
@@ -17,9 +18,14 @@ function Navegador({titulo}) {
                 <div className="col"></div>
             </div>
             <div className="row my-5">
+                <div className="col justify-content-center">
+                    <ItemsSearch/>
+                </div>
+            </div>
+            <div className="row my-5">
                 <div className="col-10">
                     <Navs/>
-                </div>
+                </div>                
                 <div className="col-2 d-flex align-items-center justify-content-center">
                     <CartWidget/>
                 </div>
