@@ -25,8 +25,6 @@ function ItemFormulario({onAdd}) {
 
     const sendDatos=(e)=>{
         e.preventDefault()
-       
-       
     }
 
     return (
