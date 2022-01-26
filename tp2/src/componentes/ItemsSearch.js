@@ -8,15 +8,17 @@ function ItemsSearch() {
     console.log(search)
 
     const handleChangeInput=(e)=>{
+        //console.log(e.target.value)
+
+        setSearch({
+            ...search,
+            [e.target.name]: e.target.value
+        })
         
-        setSearch([            
-            e.target.value
-        ])
     }
 
     const sendSearch=(e)=>{
-        e.preventDefault()
-        
+        e.preventDefault()     
     }
 
 
