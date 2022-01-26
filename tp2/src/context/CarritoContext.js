@@ -51,6 +51,10 @@ export const CarritoContextProvider=({children})=>{
         return carrito.reduce((acc, curr)=> acc + curr.cantidad ,0 )
     }
 
+    const clearCarrito=()=>{
+        setCarrito([])
+    }
+
 
     return(
         <CarritoContext.Provider value={{
@@ -63,6 +67,7 @@ export const CarritoContextProvider=({children})=>{
         disminuyeContador,
         totalItems,
         detalleCompra,
+        clearCarrito,
         }}>
             {children}
         </CarritoContext.Provider>

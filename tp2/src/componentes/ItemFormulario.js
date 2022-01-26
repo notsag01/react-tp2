@@ -1,6 +1,12 @@
-import React, { useState } from 'react';
+import React, {useContext, useState } from 'react';
+import { Link } from 'react-router-dom/cjs/react-router-dom.min';
+import { CarritoContext } from "../context/CarritoContext";
+
 
 function ItemFormulario({onAdd}) {
+
+    const {clearCarrito}=useContext(CarritoContext)
+
     const [datos, setDatos]=useState({
         nombre:"",
         apellido:"",
@@ -42,7 +48,7 @@ function ItemFormulario({onAdd}) {
                         <div>
                             <input type="mail" placeholder="Email" onChange={handleChangeInput} name="email"></input>
                         </div>
-                        <button type="submit" onClick={()=>{onAdd(datos)}}>CONFIRMAR</button>
+                        <Link to="/final"> <button type="submit" onClick={()=>{onAdd(datos); clearCarrito()}} >CONFIRMAR</button> </Link>
                     </form>
                 </div>
                 <div className="col"></div>
