@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
+import { Link } from 'react-router-dom';
 
 
 
-function ItemsSearch() {
+function ItemsSearch(onAddNombre) {
     
     const [search, setSearch]=useState("")
     console.log(search)
@@ -32,7 +33,7 @@ function ItemsSearch() {
                 </div>
                 <div className="col-2">
                     <div className="d-flex justify-content-center">
-                       <i className="fas fa-search fa-2x "></i>
+                    <Link ><i onClick={()=>{onAddNombre(search)}} className="fas fa-search fa-2x "></i></Link>
                     </div>
                 </div>
             </div>            
