@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {useContext, useState} from 'react';
 import { Link } from 'react-router-dom';
+import {CarritoContext} from "../context/CarritoContext"
 
 
 
-function ItemsSearch(onAddNombre) {
+function ItemsSearch() {
+    const {addProductosSearch}=useContext(CarritoContext)
     
     const [search, setSearch]=useState("")
     console.log(search)
@@ -19,7 +21,10 @@ function ItemsSearch(onAddNombre) {
     }
 
     const sendSearch=(e)=>{
-        e.preventDefault()     
+        e.preventDefault() 
+        
+        addProductosSearch(search)
+        
     }
 
 
@@ -33,7 +38,7 @@ function ItemsSearch(onAddNombre) {
                 </div>
                 <div className="col-2">
                     <div className="d-flex justify-content-center">
-                    <Link ><i onClick={()=>{onAddNombre(search)}} className="fas fa-search fa-2x "></i></Link>
+                    <Link ><i className="fas fa-search fa-2x "></i></Link>
                     </div>
                 </div>
             </div>            

@@ -7,6 +7,8 @@ export const CarritoContextProvider=({children})=>{
     const[carrito, setCarrito]=useState([])
     const [contador, setContador]=useState(1)
     const [nuevaCompra, setNuevaCompra]=useState({})
+    const[search, setSearch]=useState("")
+    console.log(search)
 
 //console.log(carrito)
 
@@ -54,6 +56,12 @@ export const CarritoContextProvider=({children})=>{
     const clearCarrito=()=>{
         setCarrito([])
     }
+    
+    const addProductosSearch=(nombre)=>{
+        setSearch([...search, {
+            nombre
+        }])
+    }
 
 
     return(
@@ -68,6 +76,7 @@ export const CarritoContextProvider=({children})=>{
         totalItems,
         detalleCompra,
         clearCarrito,
+        addProductosSearch
         }}>
             {children}
         </CarritoContext.Provider>
