@@ -9,8 +9,6 @@ import {getFirestore} from"../firebase/index";
 
 function ItemWidgetContainer() {
     const {carrito, removeProducto, precioTotal}=useContext(CarritoContext)
-    /* const [productos, setProductos]=useState([carrito]) */
-    //console.log(carrito)
     
      const[form, setform]=useState(false)
      
@@ -30,13 +28,11 @@ function ItemWidgetContainer() {
          }).catch(err=>{
              alert(err)
          })
-        console.log(detalleCompra)
-        
      }
     
 
     return (
-            <div className="container">
+            <div className="container itemWidgetContainer">
                 <div className="row">
                     <div className="col"></div>
                     <div className="col">
@@ -47,11 +43,11 @@ function ItemWidgetContainer() {
                 {carrito.length>0 ? 
             <div>
                 {carrito.map((productos)=>{
-                    //console.log(productos.nombre)
                     return(
                         
                         <div key={productos.id}>
                             <h1> {productos.nombre} </h1>
+                            <img src={productos.imagen} alt="{producto.id}"></img>
                             <h3> ${productos.precio} </h3>                            
                             <div>
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>

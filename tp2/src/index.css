@@ -116,10 +116,6 @@ padding: 1rem;
   text-align: center;
   font-size: 2rem;
 }
-/* PAGINA CARRITO */
-.tituloCarrito{
-  text-align: center;
-}
 
 /* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
 .contador{
@@ -133,4 +129,42 @@ padding: 1rem;
   background-color: pink;
   display: block;
   margin: 1rem;
+}
+
+/* ITEMFORMULARIO */
+.formulario{
+  border: palevioletred 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formulario input{
+  margin: .5rem 15rem;
+}
+.formulario button{
+  margin: .5rem 30rem;
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 1px solid;
+  padding: .5rem;
+  border-radius: 15px;
+}
+
+.itemWidgetContainer{
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 1px solid;
+  padding: .5rem;
+  border-radius: 15px;
+  
+}
+/* PAGINA CARRITO */
+.tituloCarrito{
+  text-align: center;
+}
+.itemWidgetContainer h1{
+  margin: 1rem;
+}
+.itemWidgetContainer img{
+  border-radius: 50%;
 }

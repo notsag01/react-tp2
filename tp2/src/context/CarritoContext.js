@@ -11,12 +11,12 @@ export const CarritoContextProvider=({children})=>{
 //console.log(carrito)
 
     /* FUNCION PARA AGREGAR AL CARRITO CON LA VERIFICACION DE QUE NO SE REPITAN */
-    const addProductoCarrito=(nombre, precio,id, cont)=>{
+    const addProductoCarrito=(nombre, precio,id, cont, imagen)=>{
 
         const setAddProducto= carrito.find((producto)=>producto.id === id)
 
         if(setAddProducto === undefined){
-            setCarrito([...carrito, {nombre,precio,id, cantidad:cont}])
+            setCarrito([...carrito, {nombre,precio,id, cantidad:cont, imagen}])
         }else{
             setAddProducto.cantidad +=cont
             setCarrito([...carrito])
