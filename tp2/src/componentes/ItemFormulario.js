@@ -31,7 +31,7 @@ function ItemFormulario({onAdd}) {
         <div className="container formulario">            
             <h1 className="row justify-content-center my-5">FORMULARIO</h1>
             <div className="container">
-                
+                <div className="col"></div>
                 <div className="col">
                     <form onSubmit={sendDatos}>
                         <div>
