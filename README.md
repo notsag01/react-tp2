@@ -15,19 +15,19 @@ INSTALACÍON:
 *Ubicarse en la raíz del proyecto y correr el siguente comando
 
 
-npm install
+#npm install
 
 
 Una vez hecho esto, instalar
 
 
-npm i react-router-dom@5
+##npm i react-router-dom@5
 
 
 Y, para terminar
 
 
-npm install firebase@8.0.2
+###npm install firebase@8.0.2
 
 
 Una vez que esté todo instalado, correr
