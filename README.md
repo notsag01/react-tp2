@@ -41,3 +41,30 @@ Y el proyecto estará disponible en
 
 http://localhost:3000
 
+
+COMPONENTES:
+
+En el archivo App.js que se encuentra dentro de la carpeta src encontramos las diferentes rutas que conforman la aplicación.
+
+#NAVEGADOR.JS
+*En el navegador encontraremos el título de la aplicación y el logo de la misma. 
+
+#Navs.JS
+*Encontraremos las categorías de los productos y los mapeamos según estas. 
+
+
+#ItemContainer.js
+*filtra los productos según el parámetro que le hayamos pasado desde las Navs.js.
+
+	#ItemLista
+	*Mapea los productos filtrados en el ItemContainer.js.
+		
+		#Item.js
+		*Renderiza los productos preivamente filtrados.
+
+
+
+
+
+
+
