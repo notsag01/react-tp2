@@ -63,6 +63,34 @@ En el archivo App.js que se encuentra dentro de la carpeta src encontramos las d
 		*Renderiza los productos preivamente filtrados.
 
 
+*DetailContainer.js
+-Filtra por id el producto seleccionado.
+	*ItemDetail.js
+	-lo renderiza.
+	-Desde ItemDetail.js seleccionamos los productos que irán 	luego al carrito.
+
+*ItemWidgetContainer.js
+-Mapea los productos del Carrito y los rederiza.
+-Muestra el total del producto, la cantindad y el Total final de la Operación.
+-Finalmente muestra un formulario.
+	
+	*ItemFormulario
+	-Genera un formulario con el que se finalizara la 	transacción. 
+
+
+*FUNCIONAMIENTO GENERAL:
+
+La página tiene un funcionamiento simple. La página principal muestra el listado de todos los productos disponibles. Todas las Cards de la la páginas están asociadas a un id de producto.
+Al clickear una, se muestra un detalle del producto. Este, tiene dos botones que nos permiten elegir la cantidad y agregarlos al carrito.
+Al confirmar la compra, aparece un formulario donde el comprador asignará sus datos.
+
+
+
+
+
+
+
+
 
 
 
