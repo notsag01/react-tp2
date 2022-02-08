@@ -8,8 +8,6 @@ export const CarritoContextProvider=({children})=>{
     const [contador, setContador]=useState(1)
     const [nuevaCompra, setNuevaCompra]=useState({})
 
-//console.log(carrito)
-
     /* FUNCION PARA AGREGAR AL CARRITO CON LA VERIFICACION DE QUE NO SE REPITAN */
     const addProductoCarrito=(nombre, precio,id, cont)=>{
 

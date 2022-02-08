@@ -4,17 +4,15 @@ import {CarritoContext} from "../context/CarritoContext"
 import { ItemCount } from './ItemCount';
 
 
-function ItemDetail({id, nombre, imagen, precio}) {
+function ItemDetail({id, nombre, imagen, precio, cat2}) {
     const {addProductoCarrito}=useContext(CarritoContext)
 
     const[agregado, setAgregado]=useState(false)
 
     const onAdd=(contador)=>{
         
-        //console.log("hola!")
         addProductoCarrito(nombre,precio,id, contador)
-        //console.log(nombre,precio,id)
-
+        
         setAgregado(true)
     }
 
@@ -29,7 +27,7 @@ function ItemDetail({id, nombre, imagen, precio}) {
                 <div className="col-md-4">
                     <h1> {nombre} </h1>
                     <h3> ${precio} </h3>
-                    {/* AGREGO AL CARRITO */}
+                    <h4>Descripción: {cat2}</h4>
                     {agregado? <Link to="/cartWidget"> Ir al carrito </Link> : <ItemCount onAdd={onAdd}/>}
                 </div>
             </div>

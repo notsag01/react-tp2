@@ -47,12 +47,11 @@ function ItemWidgetContainer() {
                 {carrito.length>0 ? 
             <div>
                 {carrito.map((productos)=>{
-                    //console.log(productos.nombre)
                     return(
                         
                         <div key={productos.id}>
                             <h1> {productos.nombre} </h1>
-                            <h3> ${productos.precio} </h3>                            
+                            <h3> ${productos.precio} </h3>                                                        
                             <div>
                                 <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
                             </div>                            

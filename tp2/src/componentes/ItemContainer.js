@@ -11,25 +11,6 @@ function ItemContainer() {
     const [loading, setLoading]= useState(true)
 
      const {catId}=useParams();
-    
-
-    /* useEffect(()=>{
-        setLoading(true);
-        const getProductos= new Promise((res)=>{
-            setTimeout(()=>{
-                const dato= catId ?
-                 data.filter((producto) => producto.cat2 === catId)                 
-                :data; 
-                res(dato)
-                //console.log(data)
-            },1000)
-        })
-        getProductos.then((res)=>{
-            setProductos(res);
-        })
-        .finally(()=>setLoading(false))
-    },[catId]) */
-    //console.log(productos)
 
     useEffect(()=>{
         const bd= getFirestore()
@@ -52,7 +33,7 @@ function ItemContainer() {
             </div>
         </div>) : (
         <div>
-            <ItemLista productos={productos}/>
+            <ItemLista productos={productos}/>            
         </div>
     );    
 }
