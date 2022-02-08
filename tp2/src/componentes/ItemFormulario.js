@@ -25,12 +25,10 @@ function ItemFormulario({onAdd}) {
 
     const sendDatos=(e)=>{
         e.preventDefault()
-       
-       
     }
 
     return (
-        <div className="container">            
+        <div className="container formulario">            
             <h1 className="row justify-content-center my-5">FORMULARIO</h1>
             <div className="container">
                 <div className="col"></div>
