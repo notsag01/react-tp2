@@ -131,7 +131,10 @@ padding: 1rem;
   box-shadow: 10px 10px 20px pink;
   border-radius: 15px;
   margin: 2rem 0 2rem 0;
-
+}
+.carrito img{
+  border-radius: 50%;
+  margin-left: 1rem;
 }
 
 /* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
