@@ -125,6 +125,15 @@ padding: 1rem;
   text-align: center;
 }
 
+.carrito{
+  border: palevioletred solid 1px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
+  border-radius: 15px;
+  margin: 2rem 0 2rem 0;
+
+}
+
 /* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
 .contador{
   

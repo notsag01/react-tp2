@@ -9,8 +9,6 @@ import {getFirestore} from"../firebase/index";
 
 function ItemWidgetContainer() {
     const {carrito, removeProducto, precioTotal}=useContext(CarritoContext)
-    /* const [productos, setProductos]=useState([carrito]) */
-    //console.log(carrito)
     
      const[form, setform]=useState(false)
      
@@ -50,13 +48,16 @@ function ItemWidgetContainer() {
                     return(
                         
                         <div key={productos.id}>
-                            <h1> {productos.nombre} </h1>
-                            <h3> ${productos.precio} </h3>                                                        
-                            <div>
-                                <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
-                            </div>                            
-                            <div>
-                                <p> subtotal: {productos.precio * productos.cantidad }</p>
+                            <div className="carrito">
+                                
+                                <h1> {productos.nombre} </h1>
+                                <h3> ${productos.precio} </h3>                                                        
+                                <div>
+                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
+                                </div>                            
+                                <div>
+                                    <p> subtotal: {productos.precio * productos.cantidad }</p>
+                                </div>
                             </div>
                         </div>
                         

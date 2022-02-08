@@ -14,10 +14,8 @@ export function Item({...producto}) {
                             <img src={producto.imagen} alt={producto.id}></img>
                         </div>
                         <section>
-                            <h1> {producto.nombre} </h1>
-                            
+                            <h1> {producto.nombre} </h1>                            
                             <span> ${producto.precio} </span>
-                            {/* <button> COMPRAR</button> */}
                         </section>
                     </Link>
                 </div>                
