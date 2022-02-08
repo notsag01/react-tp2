@@ -45,11 +45,12 @@ function ItemWidgetContainer() {
                 {carrito.length>0 ? 
             <div>
                 {carrito.map((productos)=>{
+                    console.log(productos)
                     return(
                         
                         <div key={productos.id}>
                             <div className="carrito">
-                                
+                                <img src={productos.imagen} alt="{producto.id}"></img>
                                 <h1> {productos.nombre} </h1>
                                 <h3> ${productos.precio} </h3>                                                        
                                 <div>

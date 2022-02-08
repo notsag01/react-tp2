@@ -11,7 +11,7 @@ function ItemDetail({id, nombre, imagen, precio, cat2}) {
 
     const onAdd=(contador)=>{
         
-        addProductoCarrito(nombre,precio,id, contador)
+        addProductoCarrito(nombre,precio,id, contador, imagen)
         
         setAgregado(true)
     }
