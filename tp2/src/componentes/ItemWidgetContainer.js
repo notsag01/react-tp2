@@ -32,54 +32,31 @@ function ItemWidgetContainer() {
         
      }
     
-
-    return (
-            <div className="container">
-                <div className="row">
-                    <div className="col"></div>
-                    <div className="col">
-                        <h1 className="tituloCarrito">CARRITO</h1>
-                    </div>
-                    <div className="col"></div>
-                </div>
-                {carrito.length>0 ? 
-            <div>
-                {carrito.map((productos)=>{
-                    console.log(productos)
-                    return(
-                        
-                        <div key={productos.id}>
-                            <div className="carrito">
-                                <img src={productos.imagen} alt="{producto.id}"></img>
-                                <h1> {productos.nombre} </h1>
-                                <h3> ${productos.precio} </h3>                                                        
-                                <div>
-                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
-                                </div>                            
-                                <div>
-                                    <p> subtotal: {productos.precio * productos.cantidad }</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    )
-                    
-                })}
-                <div className="row">
-                    <div className="col">
-                        <h1> TOTAL: {precioTotal()} </h1>
-                    </div>
-                    <div className="col">
-                        <button onClick={()=>setform(true)} className="finalizar">FINALIZAR COMPRA</button>
-                    </div>
-                </div>
-                {form === true ? <ItemFormulario onAdd={onAdd}/>: ""}
-            </div> 
-            : <Link to="/"> <h1> NO HAY ITEMS- VOLVER A LA PAGINA PRINCIPAL </h1> </Link>
-}
-         
-        </div>
-    );
+     
+        return (
+          <table>
+            <caption>Our products</caption>
+            <thead>
+              <tr>
+                <th> Nombre </th>
+                <th> Precio </th>
+                <th> Cantidad</th>
+                <th></th>
+              </tr>
+              
+            </thead>
+            <tbody>
+              {carrito.map(productos => (
+                <tr key={productos.id}>
+                  <td>{productos.nombre}</td>
+                  <td></td>
+                  <td><button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        )
+    
 }
 
 export default ItemWidgetContainer;
