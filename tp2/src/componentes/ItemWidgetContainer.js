@@ -57,16 +57,16 @@ function ItemWidgetContainer() {
                                     <h1> {productos.nombre} </h1>
                                     </div>
                                 <div className="col">
-                                    <h3> ${productos.precio} </h3>                                                        
+                                    <h1> ${productos.precio} </h1>                                                        
                                 </div>
                                 <div className="col">
-                                    <h3>{productos.cantidad} </h3>                                                        
+                                    <h1>{productos.cantidad} </h1>                                                        
                                 </div>
                                 <div className="col">
                                     <p> subtotal: {productos.precio * productos.cantidad }</p>
                                 </div>
                                 <div className="col">
-                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
+                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} ><i class="fas fa-trash-alt"></i></button>
                                 </div>                            
                             </div>
                         </div>
