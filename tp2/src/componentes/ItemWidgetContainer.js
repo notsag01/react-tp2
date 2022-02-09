@@ -74,12 +74,12 @@ function ItemWidgetContainer() {
                     )
                     
                 })}
-                <div className="row">
-                    <div className="col">
+                <div>
+                    <div className="total">
                         <h1> TOTAL: {precioTotal()} </h1>
                     </div>
-                    <div className="col">
-                        <button onClick={()=>setform(true)} className="finalizar">FINALIZAR COMPRA</button>
+                    <div className="finalizar">
+                        <button onClick={()=>setform(true)}>FINALIZAR COMPRA</button>
                     </div>
                 </div>
                 {form === true ? <ItemFormulario onAdd={onAdd}/>: ""}

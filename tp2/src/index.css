@@ -185,3 +185,22 @@ padding: 1rem;
   padding: .5rem;
   border-radius: 15px;
 }
+/* TOTAL */
+.total h1{
+  text-align: end;
+  margin-right: 10rem;
+  padding: 1rem;
+}
+.finalizar{
+  display: flex;
+  justify-content: end;
+  margin-right: 10rem;
+  padding: 1rem;
+
+}
+.finalizar button{
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 1px solid;
+  border-radius: 15px;
+  padding: .5rem;
+}
