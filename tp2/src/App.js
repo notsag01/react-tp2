@@ -18,7 +18,7 @@ function App() {
   return (
     <CarritoContextProvider>
     <BrowserRouter>
-      <Navegador titulo="MI PAGINA"/>
+      <Navegador titulo="P.&.A. PLATA Y ACERO"/>
       <Switch>
         <Route path="/final">          
           <Finalizar/>          
