@@ -49,16 +49,25 @@ function ItemWidgetContainer() {
                     return(
                         
                         <div key={productos.id}>
-                            <div className="carrito">
+                            <div className="row align-items-center justify-content-center carrito">
+                                <div className="col">
                                 <img src={productos.imagen} alt="{producto.id}"></img>
-                                <h1> {productos.nombre} </h1>
-                                <h3> ${productos.precio} </h3>                                                        
-                                <div>
-                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
-                                </div>                            
-                                <div>
+                                </div>
+                                <div className="col">
+                                    <h1> {productos.nombre} </h1>
+                                    </div>
+                                <div className="col">
+                                    <h3> ${productos.precio} </h3>                                                        
+                                </div>
+                                <div className="col">
+                                    <h3>{productos.cantidad} </h3>                                                        
+                                </div>
+                                <div className="col">
                                     <p> subtotal: {productos.precio * productos.cantidad }</p>
                                 </div>
+                                <div className="col">
+                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} >ELIMINAR</button>
+                                </div>                            
                             </div>
                         </div>
                         

@@ -133,8 +133,13 @@ padding: 1rem;
   margin: 2rem 0 2rem 0;
 }
 .carrito img{
+  width: 5rem;
+  height: 5rem;
   border-radius: 50%;
   margin-left: 1rem;
+}
+.carrito h1{
+  font-size: 1rem;
 }
 
 /* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
