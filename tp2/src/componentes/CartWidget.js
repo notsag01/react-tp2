@@ -9,7 +9,7 @@ const CartWidget = () => {
 
     return (
         
-           <button className="cartWidget"> <NavLink to="/cartWidget"><i className="fas fa-shopping-cart fa-2x"></i><p style={{fontSize:"1rem"}}> {totalItems()} </p></NavLink> </button>
+           <button className="cartWidget"> <NavLink to="/cartWidget"><i className="fas fa-shopping-cart fa-2x"></i><p style={{fontSize:"1rem", background:"red", borderRadius:"50%", fontWeight:"bolder"}}> {totalItems()} </p></NavLink> </button>
         
     );
 };

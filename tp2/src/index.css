@@ -161,7 +161,11 @@ padding: 1rem;
   width: 2rem;
 }
 .btnComprar{
-  background-color: pink;
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 2px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px pink;
+  padding: .5rem;
   display: block;
   margin: 1rem;
 }
@@ -182,6 +186,7 @@ padding: 1rem;
   margin: .5rem 30rem;
   background-image: linear-gradient( #f8dfe3,  white);
   border: palevioletred 1px solid;
+  box-shadow: 10px 10px 20px pink;
   padding: .5rem;
   border-radius: 15px;
 }
@@ -203,5 +208,6 @@ padding: 1rem;
   background-image: linear-gradient( #f8dfe3,  white);
   border: palevioletred 1px solid;
   border-radius: 15px;
+  box-shadow: 10px 10px 20px pink;
   padding: .5rem;
 }
