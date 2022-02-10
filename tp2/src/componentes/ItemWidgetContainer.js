@@ -44,8 +44,7 @@ function ItemWidgetContainer() {
                 </div>
                 {carrito.length>0 ? 
             <div>
-                {carrito.map((productos)=>{
-                    console.log(productos)
+                {carrito.map((productos)=>{                    
                     return(
                         
                         <div key={productos.id}>
@@ -66,7 +65,7 @@ function ItemWidgetContainer() {
                                     <p> subtotal: {productos.precio * productos.cantidad }</p>
                                 </div>
                                 <div className="col">
-                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} ><i class="fas fa-trash-alt"></i></button>
+                                    <button id={productos.id} onClick={()=>removeProducto(productos.id)} ><i className="fas fa-trash-alt"></i></button>
                                 </div>                            
                             </div>
                         </div>

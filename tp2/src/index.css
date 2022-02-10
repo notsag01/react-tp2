@@ -198,7 +198,7 @@ padding: 1rem;
 }
 .finalizar{
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   margin-right: 10rem;
   padding: 1rem;
 
