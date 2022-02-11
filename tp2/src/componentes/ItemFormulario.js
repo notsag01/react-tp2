@@ -13,10 +13,9 @@ function ItemFormulario({onAdd}) {
         telefono:"",
         email:""
     })
-    //console.log(datos)
+    
 
     const handleChangeInput=(e)=>{
-        //console.log(e.target.value)
         setDatos({
             ...datos,
             [e.target.name] : e.target.value
