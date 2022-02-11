@@ -1,11 +1,24 @@
-import React, {Fragment} from 'react'
+import React, {useState} from 'react'
 import { useForm } from 'react-hook-form'
 
-const ItemFormulario = () => {
+const ItemFormulario = ({onAdd}) => {
     const { register, formState: { errors }, handleSubmit } = useForm();
 
-    const onSubmit=(data)=>{
+    const [data, setData]=useState({
+        nombre:"",
+        apellido:""
+    })
+    console.log(data)
+
+    const onSubmit=(data,e)=>{
         console.log(data)
+
+        setData({
+            ...data,
+            [e.target.name]: e.target.value,
+        })
+
+    
     }
   
     return (
@@ -21,7 +34,7 @@ const ItemFormulario = () => {
                 { required: true })} />
                 {errors.apellido && "Last name is required"}
             
-            <input type="submit" />
+            <input type="submit" onClick={()=>{onAdd(data)}} />
         </form>
       </>
     )}
