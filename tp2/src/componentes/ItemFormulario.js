@@ -9,15 +9,21 @@ const ItemFormulario = () => {
     }
   
     return (
-      <form onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("firstName", { required: true })} />
-        {errors.firstName?.type === 'required' && "First name is required"}
-        
-        <input {...register("lastName", { required: true })} />
-        {errors.lastName && "Last name is required"}
-        
-        <input type="submit" />
-      </form>)
-}
+        <>
+        <form onSubmit={handleSubmit(onSubmit)}>
+            <input 
+            {...register("nombre",
+                { required: true })} />
+                {errors.nombre?.type === 'required' && "First name is required"}
+            
+            <input 
+            {...register("apellido", 
+                { required: true })} />
+                {errors.apellido && "Last name is required"}
+            
+            <input type="submit" />
+        </form>
+      </>
+    )}
  
 export default ItemFormulario;
