@@ -1,11 +1,8 @@
 import React, {useState, useEffect} from 'react';
 import ItemDetail from "./ItemDetail"
-//import data from "../mock/Mock"
 import {useParams} from "react-router-dom"
 import {getFirestore} from"../firebase/index"
 
-
-//console.log(data)
 
 function ItemDetailContainer() {
     const [producto, setProducto]= useState({})
