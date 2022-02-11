@@ -1,20 +1,47 @@
 import './App.css';
-import {Titulo} from "./componentes/titulo"; 
-import {Navbar} from "./componentes/navbar"
-import {NavLat} from "../src/componentes/nav-lat"
+import React from "react";
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Navegador from "./componentes/Navegador"
+import ItemContainer from "./componentes/ItemContainer"
+import ItemDetailContainer from "./componentes/DetailContainer"
+import { CarritoContextProvider } from './context/CarritoContext';
+import ItemWidgetContainer from './componentes/ItemWidgetContainer';
+import Finalizar from './componentes/Finalizar';
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-          <Titulo />
-          <Navbar />
-      </header>
-      <main className="Main">
-          <NavLat/>
-      </main>
-    </div>
-  );
+    <CarritoContextProvider>
+    <BrowserRouter>
+      <Navegador titulo="P.&.A. PLATA Y ACERO"/>
+      <Switch>
+        <Route path="/final">          
+          <Finalizar/>          
+        </Route>       
+        <Route path="/cartWidget">          
+          <ItemWidgetContainer/>          
+        </Route>       
+        <Route path="/categoria/:catId">
+          <ItemContainer/>
+        </Route>
+        <Route path="/producto/:itemId">          
+          <ItemDetailContainer/>          
+        </Route>
+        <Route exact path="/">
+          <ItemContainer/>
+        </Route>
+      </Switch>
+    </BrowserRouter>
+    </CarritoContextProvider>
+  )
+  
+   
+  
 }
 
 export default App;

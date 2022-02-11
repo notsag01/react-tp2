@@ -11,3 +11,203 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* Header y Navs */
+.encabezado{
+  background-image: linear-gradient( #f8dfe3,  white);
+}
+.titulo{
+  text-align: center;
+  margin: 0 0 0 0;
+  text-decoration: none;
+  color: black;
+}
+.logo{
+  height: 10rem;
+  width: 10rem;
+  margin: 0 0 0 1rem;
+}
+
+.navsDeCategorias{
+text-align: center;
+}
+.navsDeCategorias a{
+color: black;
+font-weight: bolder;
+font-size: 1.4rem;
+padding: 1rem;
+}
+@media only screen and (min-width:768px){
+  .navsDeCategorias a{
+    font-size: 2rem;
+  }
+}
+.cartWidget{
+  font-size: .5rem;
+}
+
+/* /componente/item */
+.card{
+  border: palevioletred solid 1px;
+  margin: 1rem;
+  padding: .5rem;
+  background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
+
+}
+
+.card img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media only screen and (min-width:768px){
+  .card img{
+    width: 150px;
+    height: 150px;
+  }
+}
+.card section{
+  height: 7rem;
+  text-align: center;
+}
+.card h1{
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: .5rem;
+}
+.card h6{
+  color: black;
+}
+.card span{
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+  padding: .5rem;
+  text-align: center;
+}
+
+/* detail */
+.detail{
+  margin: auto;
+  border: palevioletred 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
+}
+.detail img{
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  padding: 1rem;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+.detail h1{
+  text-align: center;
+}
+.detail h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.detail h4{
+  text-align: center;
+  font-size: 1.5rem;
+}
+.detail h6{
+  text-align: center;
+  font-size: 2rem;
+}
+/* PAGINA CARRITO */
+.tituloCarrito{
+  text-align: center;
+}
+
+.carrito{
+  border: palevioletred solid 1px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  box-shadow: 10px 10px 20px pink;
+  border-radius: 15px;
+  margin: 2rem 0 2rem 0;
+}
+.carrito img{
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-left: 1rem;
+}
+.carrito h1{
+  font-size: 1rem;
+}
+.carrito p{
+  font-weight: bolder;
+}
+.carrito button{
+  height: 3rem;
+  width: 3rem;
+  color: red;
+}
+
+/* CONTADOR DE PRODUCTOS DEL COMPONENTE ITEMCOUNT */
+.contador{
+  
+  margin: 1rem 1rem 1rem 1rem;
+}
+.btnContador{
+  margin: 1rem 1rem 1rem 1rem;
+  height: 2rem;
+  width: 2rem;
+}
+.btnComprar{
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 2px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px pink;
+  padding: .5rem;
+  display: block;
+  margin: 1rem;
+}
+
+/* ITEMFORMULARIO */
+.formulario{
+  border: palevioletred 1px solid;
+  border-radius: 15px;
+  background-image: linear-gradient( #f8dfe3,  white);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.formulario input{
+  margin: .5rem 15rem;
+}
+.formulario button{
+  margin: .5rem 30rem;
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 1px solid;
+  box-shadow: 10px 10px 20px pink;
+  padding: .5rem;
+  border-radius: 15px;
+}
+/* TOTAL  ItemWidgetContainer*/
+.total h1{
+  text-align: end;
+  margin-right: 10rem;
+  padding: 1rem;
+}
+.finalizar{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 10rem;
+  padding: 1rem;
+
+}
+/* finalizar  ItemWidgetContainer*/
+.finalizar button{
+  background-image: linear-gradient( #f8dfe3,  white);
+  border: palevioletred 1px solid;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px pink;
+  padding: .5rem;
+}
